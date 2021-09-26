@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @font-face {
   font-family: "Conso";
   src: url("/fonts/Conso.woff") format("woff"),
@@ -17,7 +19,7 @@ body {
   margin: 0;
   font-size: 13px;
   line-height: 18px;
-  background: #00303e;
+  background: $palette_dark_cyan;
   max-width: 100%;
 }
 
@@ -27,7 +29,7 @@ input,
 select,
 textarea {
   font-family: "Conso", Courier New, monospace;
-  color: #f8f8f2;
+  color: $palette_dirty_white;
 }
 
 * {

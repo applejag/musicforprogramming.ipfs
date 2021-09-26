@@ -13,41 +13,43 @@
 </Section>
 
 <style lang="scss">
+  @import "../styles/variables.scss";
+
   pre code {
     white-space: pre-wrap;
     tab-size: 2rem;
   }
 
   .indent {
-    display: block;
+    display: inline-block;
     text-indent: -2rem;
     padding-left: 2rem;
     margin-left: 2rem;
   }
 
   .keyword {
-    color: #66d9ef;
+    color: $palette_blue;
     font-style: italic;
   }
 
   .string {
-    color: #efe158;
+    color: $palette_yellow;
   }
 
   .function {
-    color: #a6e22e;
+    color: $palette_green;
   }
 
   .param {
-    color: #fd971f;
+    color: $palette_orange;
     font-style: italic;
   }
 
   .constant {
-    color: #ae81ff;
+    color: $palette_purple;
   }
 
   .operator {
-    color: #ec007c;
+    color: $palette_red;
   }
 </style>

@@ -24,5 +24,5 @@
 <Section>07: Tahlhoff Garten + Untitled</Section>
 
 <style type="scss" global>
-  @import "./styles/global.scss";
+  @import "./styles/_global.scss";
 </style>
