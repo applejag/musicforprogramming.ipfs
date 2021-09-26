@@ -24,6 +24,7 @@ body {
 
   @media (max-width: $size_medium) {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -31,7 +32,8 @@ body,
 button,
 input,
 select,
-textarea {
+textarea,
+code {
   font-family: "Conso", Courier New, monospace;
   color: $palette_dirty_white;
 }
@@ -43,6 +45,19 @@ textarea {
 a {
   text-decoration: none;
   color: $palette_red;
+}
+
+button {
+  color: $palette_blue;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 a:hover,

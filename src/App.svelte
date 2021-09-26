@@ -2,10 +2,7 @@
   import Section from "./sections/Section.svelte";
   import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
-  import {
-    getEpisodeById,
-    getLatestEpisode,
-  } from "./episodes/EpisodeRepository";
+  import { getEpisodeById, getLatestEpisode } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
 
   const searchKeys = Array.from(
