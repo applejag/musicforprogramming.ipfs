@@ -1,3 +1,5 @@
+<svelte:options immutable />
+
 <script lang="ts">
   import AudioPlayer from "../AudioPlayer.svelte";
   import Link from "../Link.svelte";
@@ -6,7 +8,7 @@
 
   export let currentEpisode: EpisodeData;
 
-  let notesLines = currentEpisode.notes
+  $: notesLines = currentEpisode.notes
     .trim()
     .split("\n")
     .map((o) => o.trim());

@@ -1,3 +1,5 @@
+import { onDestroy } from "svelte";
+
 function padNum2(n: number): string {
   return n.toString().padStart(2, "0");
 }
@@ -56,4 +58,12 @@ export function randomInt(minInclusive: number, maxExclusive: number): number {
 
 export function randomElement<T>(arr: ArrayLike<T>): T {
   return arr[randomInt(0, arr.length)];
+}
+
+export function addWindowEventListener(
+  type: string,
+  listener: EventListenerOrEventListenerObject
+) {
+  window.addEventListener(type, listener);
+  onDestroy(() => window.removeEventListener(type, listener));
 }

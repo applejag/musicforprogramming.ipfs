@@ -6,15 +6,26 @@
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
   import CreditsSection from "./sections/CreditsSection.svelte";
+  import { addWindowEventListener } from "./libs/util";
 
-  const searchParams = new URLSearchParams(window.location.search);
-  const searchKeys = Array.from(searchParams.keys());
+  let searchParams = new URLSearchParams(window.location.search);
+  $: searchKeys = Array.from(searchParams.keys());
+  $: currentEpisode = getEpisodeFromSearchKeys(searchKeys);
 
-  function getEpisodeFromURL() {
-    const episodeId = searchKeys.find(getEpisodeById);
+  function getEpisodeFromSearchKeys(keys) {
+    const episodeId = keys.find(getEpisodeById);
     return getEpisodeById(episodeId) ?? getLatestEpisode();
   }
+
+  function onstatechanged() {
+    console.log("state changed", window.location.search);
+    searchParams = new URLSearchParams(window.location.search);
+  }
+
+  addWindowEventListener("onpushstate", onstatechanged);
 </script>
+
+<svelte:window on:popstate={onstatechanged} />
 
 <div class="container f-left">
   <IntroSection />
@@ -26,7 +37,7 @@
   {:else if searchParams.has("credits")}
     <CreditsSection />
   {:else}
-    <EpisodeSection currentEpisode={getEpisodeFromURL()} />
+    <EpisodeSection {currentEpisode} />
   {/if}
 </div>
 
