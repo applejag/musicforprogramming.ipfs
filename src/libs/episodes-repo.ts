@@ -1645,7 +1645,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   },
 ];
 
-const episodeDatas: EpisodeData[] = episodeRawDatas.map((o, i) => ({
+const episodeDatas: EpisodeData[] = episodeRawDatas.map((o) => ({
   ...o,
   fileRelUrl: "/audio/" + o.fileName,
 }));

@@ -22,16 +22,16 @@
   function getCurrentPageFromSearchParams(
     params: URLSearchParams
   ): CurrentPage {
-    if (searchParams.has("about")) {
+    if (params.has("about")) {
       return CurrentPage.About;
-    } else if (searchParams.has("credits")) {
+    } else if (params.has("credits")) {
       return CurrentPage.Credits;
     } else {
       return CurrentPage.Episode;
     }
   }
 
-  function getEpisodeFromSearchKeys(keys) {
+  function getEpisodeFromSearchKeys(keys: string[]) {
     const episodeId = keys.find(getEpisodeById);
     return getEpisodeById(episodeId) ?? getLatestEpisode();
   }

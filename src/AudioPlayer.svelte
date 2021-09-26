@@ -34,7 +34,7 @@
     }
   }
 
-  function onloadedmetadata(e: Event) {
+  function onloadedmetadata() {
     state = PlayState.Stopped;
     updateTimeString();
   }
@@ -75,7 +75,7 @@
     audio.currentTime = 0;
   }
 
-  function seek(deltaSeconds) {
+  function seek(deltaSeconds: number) {
     if (state !== PlayState.Playing && state !== PlayState.Paused) {
       return;
     }
