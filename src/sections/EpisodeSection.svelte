@@ -1,6 +1,6 @@
 <script lang="ts">
   import AudioPlayer from "../AudioPlayer.svelte";
-  import ExternalLink from "../ExternalLink.svelte";
+  import Link from "../Link.svelte";
   import type { EpisodeData } from "../libs/episodes-repo";
   import Section from "./Section.svelte";
 
@@ -25,12 +25,12 @@
   </p>
   <p>
     {#if currentEpisode.compilerLinks.length === 1}
-      Compiler link: <ExternalLink href={currentEpisode.compilerLinks[0]} />
+      Compiler link: <Link href={currentEpisode.compilerLinks[0]} />
     {:else}
       Compiler links:
       <ul>
         {#each currentEpisode.compilerLinks as link}
-          <li><ExternalLink href={link} /></li>
+          <li><Link href={link} /></li>
         {/each}
       </ul>
     {/if}

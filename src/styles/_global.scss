@@ -61,7 +61,8 @@ button {
 }
 
 a:hover,
-.selected {
-  color: $palette_black;
+.selected,
+button.link:hover {
+  color: $palette_black !important;
   background-color: $palette_dark_blue;
 }
