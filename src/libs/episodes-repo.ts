@@ -2,7 +2,7 @@ interface EpisodeRawData {
   readonly id: string;
   readonly name: string;
   readonly fileName: string;
-  readonly compilerLinks: URL[];
+  readonly compilerLinks: string[];
   readonly notes: string;
 }
 
@@ -31,7 +31,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "one",
     name: "01: Datassette",
     fileName: "music_for_programming_1-datassette.mp3",
-    compilerLinks: [new URL("http://datassette.net/")],
+    compilerLinks: ["http://datassette.net/"],
     notes: `\
       Frog Pocket - Plinty
       Tor Lundvall - Crooked
@@ -54,7 +54,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "two",
     name: "02: Sunjammer",
     fileName: "music_for_programming_2-sunjammer.mp3",
-    compilerLinks: [new URL("http://doomsday.no/")],
+    compilerLinks: ["http://doomsday.no/"],
     notes: `\
       Bruno Sanfilippo - Piano Textures II, II
       Cliff Martinez - Wear your seatbelt
@@ -73,7 +73,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "three",
     name: "03: Datassette",
     fileName: "music_for_programming_3-datassette.mp3",
-    compilerLinks: [new URL("http://datassette.net/")],
+    compilerLinks: ["http://datassette.net/"],
     notes: `\
       LFO - Goodnight Vienna
       Philip Glass - SloMo People
@@ -102,7 +102,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "four",
     name: "04: Com Truise",
     fileName: "music_for_programming_4-com_truise.mp3",
-    compilerLinks: [new URL("http://comtruise.com/")],
+    compilerLinks: ["http://comtruise.com/"],
     notes: `\
       Joel Vandroogenbroeck - Banjomatic
       Joel Vandroogenbroeck - Silicon Siren
@@ -127,7 +127,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "five",
     name: "05: Abe Mangger",
     fileName: "music_for_programming_5-abe_mangger.mp3",
-    compilerLinks: [new URL("http://soundcloud.com/abe_mangger")],
+    compilerLinks: ["http://soundcloud.com/abe_mangger"],
     notes: `\
       Brad Meldhau - Fuck You
       Elisa Conversano - Hyperdodecahedron
@@ -163,7 +163,7 @@ const episodeRawDatas: EpisodeRawData[] = [
     id: "six",
     name: "06: Gods Of The New Age",
     fileName: "music_for_programming_6-gods_of_the_new_age.mp3",
-    compilerLinks: [new URL("http://soundcloud.com/gods-of-the-new-age")],
+    compilerLinks: ["http://soundcloud.com/gods-of-the-new-age"],
     notes: `\
       Robert Rich - Folded Space
       Steven Halpern - 3rd Chakra
@@ -185,8 +185,8 @@ const episodeRawDatas: EpisodeRawData[] = [
     name: "07: Tahlhoff Garten + Untitled",
     fileName: "music_for_programming_7-tahlhoff_garten_and_untitled.mp3",
     compilerLinks: [
-      new URL("http://soundcloud.com/jimgorn"),
-      new URL("http://soundcloud.com/tahlhoff-garten"),
+      "http://soundcloud.com/jimgorn",
+      "http://soundcloud.com/tahlhoff-garten",
     ],
     notes: `\
       Mount Kimbie - Adriatic (Klaus Remix)

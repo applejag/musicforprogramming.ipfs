@@ -5,7 +5,10 @@
 
   export let currentEpisode: EpisodeData;
 
-  let notesLines = currentEpisode.notes.split("\n").map((o) => o.trim());
+  let notesLines = currentEpisode.notes
+    .trim()
+    .split("\n")
+    .map((o) => o.trim());
 </script>
 
 <Section>
@@ -19,10 +22,31 @@
       {note}<br />
     {/each}
   </p>
+  <p>
+    {#if currentEpisode.compilerLinks.length === 1}
+      Compiler link: <a
+        href={currentEpisode.compilerLinks[0]}
+        target="about:blank">{currentEpisode.compilerLinks[0]}</a
+      >
+    {:else}
+      Compiler links:
+      <ul>
+        {#each currentEpisode.compilerLinks as link}
+          <li><a href={link} target="about:blank">{link}</a></li>
+        {/each}
+      </ul>
+    {/if}
+  </p>
 </Section>
 
 <style lang="scss">
   @import "../styles/variables.scss";
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
   h2 {
     display: inline;
