@@ -1,7 +1,18 @@
 <script lang="ts">
   import Section from "./sections/Section.svelte";
-  import EpisodesSection from "./sections/EpisodesSection.svelte";
+  import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
+  import {
+    getEpisodeById,
+    getLatestEpisode,
+  } from "./episodes/EpisodeRepository";
+
+  const searchKeys = Array.from(
+    new URLSearchParams(window.location.search).keys()
+  );
+
+  const episodeId = searchKeys.find(getEpisodeById);
+  const currentEpisode = getEpisodeById(episodeId) ?? getLatestEpisode();
 </script>
 
 <IntroSection />
@@ -11,7 +22,7 @@
   <div>--:--:-- [PLAY] [STOP] [-30s] [+30s]</div>
 </Section>
 
-<EpisodesSection />
+<EpisodeListSection currentEpisodeId={currentEpisode.id} />
 
 <Section title="Meta">
   <div>[MFP_01-52.torrent]</div>

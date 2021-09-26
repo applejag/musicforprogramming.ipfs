@@ -1,12 +1,20 @@
 <script lang="ts">
   import Section from "./Section.svelte";
   import { getAllEpisodeData } from "../episodes/EpisodeRepository";
+
+  export let currentEpisodeId: string = null;
 </script>
 
 <Section title="Episodes">
   <ol>
     {#each getAllEpisodeData() as epi (epi.id)}
-      <li><a href="?{epi.id}">{epi.name}</a></li>
+      <li>
+        {#if epi.id === currentEpisodeId}
+          <span class="selected">{epi.name}</span>
+        {:else}
+          <a href="?{epi.id}">{epi.name}</a>
+        {/if}
+      </li>
     {/each}
   </ol>
 </Section>

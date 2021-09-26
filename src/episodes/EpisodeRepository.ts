@@ -10,8 +10,12 @@ export interface EpisodeData extends EpisodeRawData {
   readonly fileRelUrl: string;
 }
 
-export function getEpisodeData(episodeId: number): EpisodeData {
-  return episodeDatas[episodeId];
+export function getLatestEpisode(): EpisodeData {
+  return episodeDatas[episodeDatas.length - 1];
+}
+
+export function getEpisodeById(episodeId: string): EpisodeData {
+  return episodeMap.get(episodeId);
 }
 
 export function getAllEpisodeData(): EpisodeData[] {
@@ -216,3 +220,7 @@ const episodeDatas: EpisodeData[] = episodeRawDatas.map((o, i) => ({
   ...o,
   fileRelUrl: "/audio/" + o.fileName,
 }));
+
+const episodeMap = new Map<string, EpisodeData>(
+  episodeDatas.map((o) => [o.id, o])
+);
