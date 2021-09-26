@@ -1,6 +1,10 @@
 <script lang="ts">
   import Section from "./Section.svelte";
   export let title: string;
+
+  $: {
+    document.title = `musicForProgramming("${title}")`;
+  }
 </script>
 
 <Section>
