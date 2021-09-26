@@ -29,6 +29,15 @@
     <button class="link">[Switch Theme]</button>
   </div>
 </Section>
+<Section title="Shameless plug">
+  <div class="links-blue">
+    <Link href="https://github.com/jilleJr/musicforprogramming.ipfs"
+      >[GitHub]</Link
+    >
+    <Link href="https://javisst.space/@kalle">[Mastodon]</Link>
+    <Link href="https://blog.jillejr.tech/">[WriteFreely blog]</Link>
+  </div>
+</Section>
 
 <style lang="scss">
   @import "../styles/variables.scss";
