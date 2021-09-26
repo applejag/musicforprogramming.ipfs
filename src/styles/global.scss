@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Conso";
+  src: url("/fonts/Conso.woff") format("woff"),
+    url("/fonts/Conso.ttf") format("truetype");
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Conso";
+  src: url("/fonts/Conso-Italic.woff") format("woff"),
+    url("/fonts/Conso-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-stretch: normal;
+}
+
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  background: #00303e;
+  max-width: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Conso", Courier New, monospace;
+  color: #f8f8f2;
+}
+
+* {
+  box-sizing: border-box;
+}
