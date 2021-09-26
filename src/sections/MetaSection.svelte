@@ -1,6 +1,7 @@
 <script lang="ts">
   import Link from "../Link.svelte";
   import Section from "./base/Section.svelte";
+  import pkgJson from "../../package.json";
 </script>
 
 <Section title="Meta">
@@ -32,7 +33,7 @@
 <Section title="Shameless plug">
   <div class="links-blue">
     <Link href="https://github.com/jilleJr/musicforprogramming.ipfs"
-      >[GitHub]</Link
+      >[{pkgJson.name} v{pkgJson.version}]</Link
     >
     <Link href="https://javisst.space/@kalle">[Mastodon]</Link>
     <Link href="https://blog.jillejr.tech/">[WriteFreely blog]</Link>
