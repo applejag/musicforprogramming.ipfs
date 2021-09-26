@@ -13,14 +13,37 @@
   const currentEpisode = getEpisodeById(episodeId) ?? getLatestEpisode();
 </script>
 
-<IntroSection />
+<div class="container f-left">
+  <IntroSection />
+</div>
 
-<EpisodeSection {currentEpisode} />
+<div class="container f-right">
+  <EpisodeSection {currentEpisode} />
+</div>
 
-<EpisodeListSection currentEpisodeId={currentEpisode.id} />
+<div class="container f-left">
+  <EpisodeListSection currentEpisodeId={currentEpisode.id} />
+  <MetaSection />
+</div>
 
-<MetaSection />
+<style type="scss">
+  :global {
+    @import "./styles/_global.scss";
+  }
 
-<style type="scss" global>
-  @import "./styles/_global.scss";
+  @import "./styles/variables.scss";
+
+  @media (min-width: $size_medium) {
+    .f-left {
+      float: left;
+    }
+
+    .f-right {
+      float: right;
+    }
+
+    .container {
+      width: 50%;
+    }
+  }
 </style>

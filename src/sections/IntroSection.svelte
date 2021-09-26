@@ -35,16 +35,18 @@
     }
   }
 
+  $tabSize: 1.5rem;
+
   pre code {
     white-space: pre-wrap;
-    tab-size: 2rem;
+    tab-size: $tabSize;
   }
 
   .indent {
     display: inline-block;
-    text-indent: -2rem;
-    padding-left: 2rem;
-    margin-left: 2rem;
+    text-indent: -$tabSize;
+    padding-left: $tabSize;
+    margin-left: $tabSize;
   }
 
   .keyword {
