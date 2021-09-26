@@ -1,0 +1,3 @@
+# MP3 files are too big and too numerous to store in the Git repo.
+# See the README.md in the repo root for how to populate this directory.
+/*.mp3

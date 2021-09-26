@@ -33,23 +33,34 @@ _Yea not yet. It's work in progress, see?_
 | Frontend framework | [Svelte][svelte]   | [jQuery][jquery]               |
 | Originality        | _Barely any_       | _Tons_                         |
 
-## Developing
+## Setting up dev env
 
-1. Install [Node.js][node-dl] (v14 or greater).
-
-2. Install dependencies using `npm`:
+1. Install [Node.js][node-dl] (v14 or greater) and download all code
+   dependencies using `npm`:
 
    ```console
    $ npm install
    ```
 
-3. Serve code locally with live reloading on code change:
+2. Download all music files. It's about 6 GB of .mp3 files, so hosting them in
+   the repo is unfeasible, even with Git LFS.
 
-   ```console
-   $ npm run dev
-   ```
+   Easiest way is to install [WebTorrent](https://webtorrent.io/) and download
+   via <https://musicforprogramming.net/MFP_01-52.torrent>. That only provides
+   the songs 01 to 52, so songs 53 to 62 will have to be downloaded manually
+   from the webpage <https://musicforprogramming.net/>.
 
-4. Visit <http://localhost:5000/>.
+   Place the downloaded songs in `public/audio/*.mp3`.
+
+## Developing
+
+Serve code locally with live reloading on code change:
+
+```console
+$ npm run dev
+```
+
+Visit <http://localhost:5000/>.
 
 ## License
 
