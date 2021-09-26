@@ -26,12 +26,12 @@
   </p>
   <p>
     {#if currentEpisode.compilerLinks.length === 1}
-      Compiler link: <Link href={currentEpisode.compilerLinks[0]} />
+      Compiler link: <Link link={currentEpisode.compilerLinks[0]} />
     {:else}
       Compiler links:
       <ul>
         {#each currentEpisode.compilerLinks as link}
-          <li><Link href={link} /></li>
+          <li><Link {link} /></li>
         {/each}
       </ul>
     {/if}
