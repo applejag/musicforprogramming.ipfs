@@ -1,109 +1,64 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
+# musicForProgramming("IPFS!");
 
-*Looking for a shareable component template instead? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+This is a port of [musicForProgramming.net][mfp] remade with [Svelte][svelte]
+and aimed to be hosted with [IPFS][ipfs].
 
----
-
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+Most of the content in this repository are the result of
+[Datassette's][datassette] hard work. All love goes to Datassette and the
+contributors to [musicForProgramming.net][mfp] for making such a wonderful site
+that I've had so many hours of great use from. ❤
 
 ```js
-"start": "sirv public --single"
+//  __/\\\\____________/\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\___
+//   _\/\\\\\\________/\\\\\\_\/\\\///////////__\/\\\/////////\\\_
+//    _\/\\\//\\\____/\\\//\\\_\/\\\_____________\/\\\_______\/\\\_
+//     _\/\\\\///\\\/\\\/_\/\\\_\/\\\\\\\\\\\_____\/\\\\\\\\\\\\\/__
+//      _\/\\\__\///\\\/___\/\\\_\/\\\///////______\/\\\/////////____
+//       _\/\\\____\///_____\/\\\_\/\\\_____________\/\\\_____________
+//        _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
+//         _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
+//          _\///______________\///__\///______________\///______________
 ```
 
-## Using TypeScript
+## View it online
 
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+_Yea not yet. It's work in progress, see?_
 
-```bash
-node scripts/setupTypeScript.js
-```
+## Difference with [musicforprogramming.net][mfp]
 
-Or remove the script via:
+|                    | This repo          | [musicforprogramming.net][mfp] |
+| ------------------ | ------------------ | ------------------------------ |
+| Hosting            | [IPFS][ipfs]       | HTTP                           |
+| Backend            | None (static site) | PHP                            |
+| Frontend framework | [Svelte][svelte]   | [jQuery][jquery]               |
+| Originality        | _Barely any_       | _Tons_                         |
 
-```bash
-rm scripts/setupTypeScript.js
-```
+## Developing
 
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
+1. Install [Node.js][node-dl] (v14 or greater).
 
-## Deploying to the web
+2. Install dependencies using `npm`:
 
-### With [Vercel](https://vercel.com)
+   ```console
+   $ npm install
+   ```
 
-Install `vercel` if you haven't already:
+3. Serve code locally with live reloading on code change:
 
-```bash
-npm install -g vercel
-```
+   ```console
+   $ npm run dev
+   ```
 
-Then, from within your project folder:
+4. Visit <http://localhost:5000/>.
 
-```bash
-cd public
-vercel deploy --name my-project
-```
+## License
 
-### With [surge](https://surge.sh/)
+This repo has not yet been assigned an open source license, as I need to clear
+up with the original author if this repo is even allowed.
 
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+[node-dl]: https://nodejs.org/en/download/
+[ipfs]: https://ipfs.io/
+[svelte]: https://svelte.dev/
+[datassette]: http://datassette.net/
+[mfp]: https://musicforprogramming.net/
+[jquery]: https://jquery.com/
