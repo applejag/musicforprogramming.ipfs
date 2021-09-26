@@ -1,30 +1,28 @@
 <script lang="ts">
-	export let name: string;
+  import Section from "./Section.svelte";
+  import IntroSection from "./sections/IntroSection.svelte";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<IntroSection />
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+<Section title="Episodes">
+  <ol>
+    <li>01: Datassette</li>
+    <li>02: Sunjammer</li>
+    <li>03: Datassette</li>
+    <li>04: Com Truise</li>
+  </ol>
+</Section>
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
+<Section title="Meta">
+  <div>[MFP_01-52.torrent]</div>
+  <div>[About] [Credits] [folder.jpg] [RSS] [SublimeText.tmTheme]</div>
+  <div>[iTunes] [Facebook] [Twitter]</div>
+  <div>[Enterprise Mode] [Switch Theme]</div>
+</Section>
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+<Section>07: Tahlhoff Garten + Untitled</Section>
+
+<style type="scss" global>
+  @import "./styles/global.scss";
 </style>
