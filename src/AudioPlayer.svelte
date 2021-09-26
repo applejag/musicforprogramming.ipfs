@@ -135,7 +135,7 @@
 </div>
 
 <div class="file">
-  <a href={src}>{displaySrc}</a>
+  <a href={src} target="about:blank">{displaySrc}</a>
   {#await fileSizePromise}
     <span>(...mb)</span>
   {:then fileSize}
