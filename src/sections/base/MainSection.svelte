@@ -9,10 +9,10 @@
 </Section>
 
 <style lang="scss">
-  @import "../styles/variables.scss";
+  @import "../../styles/variables.scss";
 
   h2 {
-    display: inline;
+    display: block;
     font-size: inherit;
     font-weight: inherit;
 

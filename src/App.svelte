@@ -4,13 +4,17 @@
   import { getEpisodeById, getLatestEpisode } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
+  import AboutSection from "./sections/AboutSection.svelte";
+  import type { SvelteComponent } from "svelte";
+  import CreditsSection from "./sections/CreditsSection.svelte";
 
-  const searchKeys = Array.from(
-    new URLSearchParams(window.location.search).keys()
-  );
+  const searchParams = new URLSearchParams(window.location.search);
+  const searchKeys = Array.from(searchParams.keys());
 
-  const episodeId = searchKeys.find(getEpisodeById);
-  const currentEpisode = getEpisodeById(episodeId) ?? getLatestEpisode();
+  function getEpisodeFromURL() {
+    const episodeId = searchKeys.find(getEpisodeById);
+    return getEpisodeById(episodeId) ?? getLatestEpisode();
+  }
 </script>
 
 <div class="container f-left">
@@ -18,32 +22,34 @@
 </div>
 
 <div class="container f-right">
-  <EpisodeSection {currentEpisode} />
+  {#if searchParams.has("about")}
+    <AboutSection />
+  {:else if searchParams.has("credits")}
+    <CreditsSection />
+  {:else}
+    <EpisodeSection currentEpisode={getEpisodeFromURL()} />
+  {/if}
 </div>
 
 <div class="container f-left">
-  <EpisodeListSection currentEpisodeId={currentEpisode.id} />
+  <EpisodeListSection />
   <MetaSection />
 </div>
 
-<style type="scss">
-  :global {
-    @import "./styles/_global.scss";
-  }
-
+<style type="scss" global>
+  @import "./styles/_global.scss";
   @import "./styles/variables.scss";
 
   @media (min-width: $size_medium) {
-    .f-left {
-      float: left;
-    }
-
-    .f-right {
-      float: right;
-    }
-
     .container {
       width: 50%;
+      &.f-left {
+        float: left;
+      }
+
+      &.f-right {
+        float: right;
+      }
     }
   }
 </style>

@@ -1,6 +1,7 @@
 <script lang="ts">
   import Section from "./base/Section.svelte";
   import { getAllEpisodeData } from "../libs/episodes-repo";
+  import Link from "../Link.svelte";
 
   export let currentEpisodeId: string = null;
 </script>
@@ -12,7 +13,7 @@
         {#if epi.id === currentEpisodeId}
           <span class="selected">{epi.name}</span>
         {:else}
-          <a href="?{epi.id}">{epi.name}</a>
+          <Link href="?{epi.id}">{epi.name}</Link>
         {/if}
       </li>
     {/each}

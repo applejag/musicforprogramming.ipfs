@@ -8,8 +8,8 @@
     <Link href="/MFP_01-52.torrent" download>[MFP_01-52.torrent]</Link>
   </div>
   <div class="links-purple">
-    <a href="?about">[About]</a>
-    <a href="?credits">[Credits]</a>
+    <Link href="?about">[About]</Link>
+    <Link href="?credits">[Credits]</Link>
     <Link href="/img/folder.jpg">[folder.jpg]</Link>
     <Link href="https://musicforprogramming.net/rss.php">[RSS]</Link>
     <Link href="/files/monokai_datashat_edit.tmTheme.xml" download
@@ -25,7 +25,7 @@
     <Link href="https://twitter.com/datassette">[Twitter]</Link>
   </div>
   <div class="links-orange">
-    <Link href="">[Enterprise Mode]</Link>
+    <Link href="http://datassette.net/businessfunk/">[Enterprise Mode]</Link>
     <button class="link">[Switch Theme]</button>
   </div>
 </Section>
