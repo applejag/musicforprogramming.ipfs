@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ExternalLink from "./ExternalLink.svelte";
   import {
     fetchContentLengthBytes,
     newAudioContext,
@@ -135,7 +136,7 @@
 </div>
 
 <div class="file">
-  <a href={src} target="about:blank">{displaySrc}</a>
+  <ExternalLink href={src}>{displaySrc}</ExternalLink>
   {#await fileSizePromise}
     <span>(...mb)</span>
   {:then fileSize}
