@@ -21,6 +21,10 @@ body {
   line-height: 18px;
   background: $palette_dark_cyan;
   max-width: 100%;
+
+  @media (max-width: $size_medium) {
+    font-size: 16px;
+  }
 }
 
 body,
@@ -34,4 +38,15 @@ textarea {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $palette_red;
+}
+
+a:hover,
+.selected {
+  color: $palette_black;
+  background-color: $palette_dark_blue;
 }
