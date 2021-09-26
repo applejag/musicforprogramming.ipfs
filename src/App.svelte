@@ -5,7 +5,6 @@
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
-  import type { SvelteComponent } from "svelte";
   import CreditsSection from "./sections/CreditsSection.svelte";
 
   const searchParams = new URLSearchParams(window.location.search);

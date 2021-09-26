@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onDestroy } from "svelte";
-
   import { randomElement, randomInt } from "./libs/util";
 
   const things = [
