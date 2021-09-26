@@ -6,6 +6,7 @@
     getEpisodeById,
     getLatestEpisode,
   } from "./episodes/EpisodeRepository";
+  import EpisodeSection from "./sections/EpisodeSection.svelte";
 
   const searchKeys = Array.from(
     new URLSearchParams(window.location.search).keys()
@@ -17,10 +18,7 @@
 
 <IntroSection />
 
-<Section>
-  <p>07: Tahlhoff Garten + Untitled</p>
-  <div>--:--:-- [PLAY] [STOP] [-30s] [+30s]</div>
-</Section>
+<EpisodeSection {currentEpisode} />
 
 <EpisodeListSection currentEpisodeId={currentEpisode.id} />
 
