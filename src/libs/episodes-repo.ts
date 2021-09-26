@@ -536,6 +536,308 @@ const episodeRawDatas: EpisodeRawData[] = [
       Kraftwerk - Franz Schubert / Endless Endless
       `,
   },
+
+  {
+    id: "twenty",
+    name: "20: Uberdog",
+    fileName: "music_for_programming_20-uberdog.mp3",
+    compilerLinks: ["https://soundcloud.com/uberdog"],
+    notes: `\
+      Danny Norbury - I turn off the last light and close the door
+      Monolake - Mass Transit Railway
+      Alva Noto - Xerrox Monophaser 1
+      Lee Gamble - Rufige
+      Laurie Spiegel - Pentachrome
+      Dopplereffekt - Calabi Yau Manifold
+      Oneohtrix Point Never - Russian Mind
+      Ekoclef - Here Comes Trouble
+      Arovane - Tomorrow Morning
+      Southfacing - Mocked
+      Autechre - Paralel Suns
+      Leyland Kirby - When Did Our Dreams and Futures Drift So Far Apart (Different Mix)
+      Danny Norbury - Bluebeard 4
+      Tim Hecker - Rainbow Blood
+      Tim Hecker - Harmony In Blue 1
+      Laurie Spiegel - East River Dawn
+      Aleksi Perala - The Field
+      Oneohtrix Point Never - Woe is the Transgressor II
+      The Boats - The Ballad for Achievement
+      Stars of the Lid - Down 3
+      Aleksi Perala - Rauhalanjuka
+      `,
+  },
+
+  {
+    id: "twentyone",
+    name: "21: Idol Eyes",
+    fileName: "music_for_programming_21-idol_eyes.mp3",
+    compilerLinks: ["https://idoleyes.bandcamp.com/"],
+    notes: `\
+      David Sylvan & Holger Czukay - Premonition (Giant Empty Iron Vessel)
+      King Crimson - Islands (Oboe Mix)
+      Agitation Free - Pulse
+      Mordant Music - Inn Ohm The Lake
+      Kid 606 - Horseback
+      New Fast - High Rising Terminal
+      Miles Davis - Nem Um Talvez
+      Wolfgang Vogt - Ruckverzauberung 3.1
+      Hawkwind - Forge Of The Vulcan
+      Liars - It's All Blooming Now Mt. Heart Attack
+      The KLF - Madrugada Eterna
+      The United States Of America - Love Song For The Dead Che
+      Manuel Goettsching - Quasarsphere
+      Amon Tobin - Nova
+      Emeralds - Now You See Me
+      Idol Eyes - Gegen Bewegung
+      Broadcast - Confession Modulation
+      Shenzhen - Zen
+      Human Mirror - Mountain Stomp
+      `,
+  },
+
+  {
+    id: "twentytwo",
+    name: "22: Mindaugaszq",
+    fileName: "music_for_programming_22-mindaugaszq.mp3",
+    compilerLinks: ["https://www.mixcloud.com/mindaugaszq/"],
+    notes: `\
+      Carl Craig & Moritz Von Oswald - Intro
+      Carl Craig & Moritz Von Oswald - Movement 1
+      Chris Zabriskie - Chance, Luck, Errors in Nature, Fate, Destruction As a Finale
+      Pan American - Both Ends Fixed
+      Boards of Canada - Under the Coke Sign
+      Machinefabriek - Stofstuk (Alva Noto Remix)
+      Alva Noto - Xerrox Phaser Acat 1
+      Jon Hopkins - Abandon Window
+      Robert Lippok - Open
+      NHK'Koyxeи - 367
+      Shed - Waved Mind / Archived Document
+      Ryoji Ikeda - luxus 1-3
+      Philip Glass - Koyaanisqatsi
+      Philip Glass - Translation and Credits
+      `,
+  },
+
+  {
+    id: "twentythree",
+    name: "23: Panda Magic",
+    fileName: "music_for_programming_23-panda_magic.mp3",
+    compilerLinks: ["https://www.mixcloud.com/pandamagic/"],
+    notes: `\
+      Stuart Dempster - Cloud Landings
+      Auburn Lull - Rising Meridian
+      Node - Levy
+      E.A.R. - Untitled (Koner Experiment 6)
+      So Takahashi - Blue, Blue, Electronic Blue
+      Giles Reaves - Wunjo (Monkeydeed Eggs Hell Remix)
+      The Saxophonettes - Secret Squirrel (Orb-ient Remix)
+      Mark Isham - Never Cry Wolf
+      Cypher 7 - Ladder Of Lights
+      Biosphere & Pete Namlook - When The Night Was Black
+      Brook / Eno / Lanois - Hybrid
+      Bola - Vespers
+      William Fowler Collins - Dark Country Road
+      Popol Vuh - Why Do I Still Sleep
+      `,
+  },
+
+  {
+    id: "twentyfour",
+    name: "24: RITES",
+    fileName: "music_for_programming_24-rites.mp3",
+    compilerLinks: ["https://soundcloud.com/rriitteess"],
+    notes: `\
+      Donnacha Costello - Cocoa B
+      Disjecta - Pit
+      Rocketship - We Took The High Road
+      Rafael Anton Irisarri - Deception Falls
+      Billow Observatory - Pankalia
+      Oneohtrix Point Never - Describing Bodies
+      Rob Theakston - Puck
+      Legowelt - Pacific Dreams
+      Borden, Ferraro, Godin, Halo, Lopatin - People of the Wind Pt. 1
+      Tim Hecker - I'm Transmitting Tonight
+      Nacho Patrol - El Fuego En Nosotros Todo (Heathered Pearls' Afternoon Nod Remix)
+      Clark - Dusk Swells
+      RITES - Descent
+      `,
+  },
+
+  {
+    id: "twentyfive",
+    name: "25: _nono_",
+    fileName: "music_for_programming_25-_nono_.mp3",
+    compilerLinks: ["https://soundcloud.com/nono-16"],
+    notes: `\
+      Belle Belle - End The Wind
+      Maps And Diagrams - The Melancholy Of The Weavers
+      Aus - It's Tomorrow Already
+      Vangelis - Rachel's Song
+      Puffin On My Side - Winter Coast Sand
+      Calling Sister Midnight - Daemon In The Cube
+      Mark Morgan - Metallic Monks
+      _nono_ - Commfault
+      Space Megalithe - Galaxie Miroir
+      Nigel Samways - The Singing Gloom (heygate Version)
+      Steve Roach - Walking Upright
+      Hartverdrahtet - Akronyme Analogiker
+      Tim Hecker - Hatred Of Music I
+      Inputjunkei - Calixcoatesbeautifulcountryboardsechoredub
+      Not Your Average Hippy - Sunset Dawn
+      Harness Kretzer - A Teardrop On My Record Player
+      Emmanuel Errante - Linfa
+      `,
+  },
+
+  {
+    id: "twentysix",
+    name: "26: Abstraction",
+    fileName: "music_for_programming_26-abstraction.mp3",
+    compilerLinks: ["https://soundcloud.com/abstraction"],
+    notes: `\
+      Sweetheart of Kairi - An Intro...
+      Martin A. Smith - In Alien Lands
+      Brainworks - O, Usurper! To Dust You Shall Return, For Your Throne is But a Vapour, Your Reign a Whispering Wind.
+      Arromanches - Omaha
+      Ray Lynch - Tiny Geometries
+      C418 - I Will Perhaps Never Meet You In Person
+      James Devane - 10-15
+      Felix Laband - Radio Right Now
+      Fingers In the Noise - Lost In the Freezing Fog
+      Rhian Sheehan - Part 12
+      Ioflow - Impermanence
+      Abstraction - 06
+      Owsey - The Melody That Plays Loud Through Sundown Skies
+      `,
+  },
+
+  {
+    id: "twentyseven",
+    name: "27: Michael Hicks",
+    fileName: "music_for_programming_27-michael_hicks.mp3",
+    compilerLinks: ["http://michaelarts.net/"],
+    notes: `\
+      Machinefabriek - Apollo
+      Andy Stott - Submission
+      Sigur Rós - Valtari
+      Nils Frahm - Snippet
+      Peter Broderick - Part 4: The Dream
+      Halo - Hollow City
+      Machinefabriek - Blue
+      `,
+  },
+
+  {
+    id: "twentyeight",
+    name: "28: Big War",
+    fileName: "music_for_programming_28-big_war.mp3",
+    compilerLinks: [
+      "https://soundcloud.com/bigwar",
+      "http://www.genericgreeting.co.uk/",
+    ],
+    notes: `\
+      William Basinski - Untitled VI
+      Actress - Jardin
+      M. Geddes Gengras - Splashed Into Mine
+      Welsh Assembly - Kuala Lumpur
+      The Sight Below - Fervent
+      littlecloud - tapeloop2
+      Gas - Untitled
+      Kernon - Tek N (edit)
+      Talk Talk - Taphead
+      Dettinger - Blond 2
+      FREnchfire - Rich edit
+      FREnchfire - Ambient Tech
+      cLOUDDEAD - Apt. A (2)
+      Schwarz - Skies 7 Skies 2 Backwards
+      Secret Face - I Regret Nothing
+      Blue Daisy x Anneka - Raindrops
+      Robert Hood - Better Life
+      Visionist - The Call (feat. Fatima Al Qadiri)
+      Lorenzo Senni - PowerAge Xion4
+      `,
+  },
+
+  {
+    id: "twentynine",
+    name: "29: Luke Handsfree",
+    fileName: "music_for_programming_29-luke_handsfree.mp3",
+    compilerLinks: ["https://twitter.com/lukehandsfree"],
+    notes: `\
+      Jacob 2-2 & Pogflipper - Roof Top Paint Drops (excerpt)
+      cLOUDDEAD - Our Name (excerpt)
+      Reso - Coronium
+      Claro Intelecto - Beautiful Death
+      Clubroot - Birth Interlude
+      Ross 154 - Hybris II
+      Oneohtrix Point Never - Remember
+      Rjyan Kidwell - Toronto Blessing
+      Konx-Om-Pax - Govanhill Baths Live Recording
+      Sepalcure - Inside
+      Goitia Deitz - Speaking In Code
+      Space Dimension Controller - Unidentified Flying Oscillator
+      Inigo Kennedy - Daybreak
+      Meschi - Sur La Route
+      Alva Noto - Haliod Xerrox Copy 11
+      Ochre - Sylph
+      Goitia Deitz - In Tongues
+      Unknown Artist - Unknown
+      Miles - Loran Dreams
+      FractalSCROTE - Suddenly Everything Has Changed... (unreleased)
+      Blue Calx - Blue Calx
+      Jeff Mills - Truth to the Chosen One
+      Buddy Peace - Untitled (Bully Projects Megamix Side A)
+      `,
+  },
+
+  {
+    id: "thirty",
+    name: "30: Matt Kruse",
+    fileName: "music_for_programming_30-matt_kruse.mp3",
+    compilerLinks: ["https://twitter.com/krusenator"],
+    notes: `\
+      Odd Nosdam - 20th
+      Boards of Canada - Dayvan Cowboy (Odd Nosdam Remix)
+      Matthewdavid - Vvoxcave
+      Casino Versus Japan - Lake
+      Atlas Sound - Let The Blind Lead Those Who Can See But Cannot Feel
+      Kingfisherg - We Heard A Faint
+      Boards of Canada - Visual Drone 12 (Bonus)
+      Stars Of The Lid - Manoeuvring The Nocturnal Hum (Live)
+      Jessica Bailiff - Your Sounds Make Patterns In My Eyes (for SOTL)
+      Freescha - Dental Fur
+      Aphex Twin - Rhubarb
+      Matthewdavid - Ambigroup
+      Run DMT - Cash For Gold
+      Matthewdavid - Tape4 (w/ Run DMT)
+      Casino Versus Japan - Vessels That Float Out Of Metals That Sink (Part 4)
+      Proem - Hope Is Great But We Need Caffeine
+      `,
+  },
+
+  {
+    id: "thirtyone",
+    name: "31: Datassette",
+    fileName: "music_for_programming_31-datassette.mp3",
+    compilerLinks: ["http://datassette.net/"],
+    notes: `\
+      Eugen Thomass - Dancing Fishes
+      Colin Potter - Rooftops
+      Datassette - Any Colour You Like
+      Sluagh Ghairm - Incantation
+      Children Of Alice - The Liminal Space
+      Christ. - Pylonesque (Datassette Retouch)
+      Datassette - Leaky Circuits
+      Forward Strategy Group - Inside The Shadows
+      Pantha Du Prince - Im Bann
+      Digit (Kubus Kassettes 1984) (Excerpt) (Datassette Retouch)
+      The Field - No. No... (Tim Hecker Remix)
+      Stringtronics - Dawn Mists (Excerpt)
+      Love Cult - Lulling Demons To Sleep
+      Kane Ikin - Slow Waves
+      Jo Johnson - Ancestral Footsteps
+      `,
+  },
 ];
 
 const episodeDatas: EpisodeData[] = episodeRawDatas.map((o, i) => ({
