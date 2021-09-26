@@ -8,9 +8,28 @@
   import CreditsSection from "./sections/CreditsSection.svelte";
   import { addWindowEventListener } from "./libs/util";
 
+  enum CurrentPage {
+    About,
+    Credits,
+    Episode,
+  }
+
   let searchParams = new URLSearchParams(window.location.search);
   $: searchKeys = Array.from(searchParams.keys());
   $: currentEpisode = getEpisodeFromSearchKeys(searchKeys);
+  $: currentPage = getCurrentPageFromSearchParams(searchParams);
+
+  function getCurrentPageFromSearchParams(
+    params: URLSearchParams
+  ): CurrentPage {
+    if (searchParams.has("about")) {
+      return CurrentPage.About;
+    } else if (searchParams.has("credits")) {
+      return CurrentPage.Credits;
+    } else {
+      return CurrentPage.Episode;
+    }
+  }
 
   function getEpisodeFromSearchKeys(keys) {
     const episodeId = keys.find(getEpisodeById);
@@ -32,9 +51,9 @@
 </div>
 
 <div class="container f-right">
-  {#if searchParams.has("about")}
+  {#if currentPage === CurrentPage.About}
     <AboutSection />
-  {:else if searchParams.has("credits")}
+  {:else if currentPage === CurrentPage.Credits}
     <CreditsSection />
   {:else}
     <EpisodeSection {currentEpisode} />
@@ -42,7 +61,9 @@
 </div>
 
 <div class="container f-left">
-  <EpisodeListSection />
+  <EpisodeListSection
+    currentEpisodeId={currentPage === CurrentPage.Episode && currentEpisode.id}
+  />
   <MetaSection />
 </div>
 

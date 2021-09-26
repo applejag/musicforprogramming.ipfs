@@ -3,7 +3,7 @@
 
   import { addWindowEventListener } from "./libs/util";
 
-  export let link: LinkOrHref;
+  export let link: LinkOrHref = null;
   export let href: string = linkHref(link);
   export let target: string = href.startsWith("?") ? undefined : "about:blank";
   export let download: boolean | undefined = undefined;
