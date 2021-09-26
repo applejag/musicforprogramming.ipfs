@@ -838,6 +838,811 @@ const episodeRawDatas: EpisodeRawData[] = [
       Jo Johnson - Ancestral Footsteps
       `,
   },
+
+  {
+    id: "thirtytwo",
+    name: "32: Chris Seddon",
+    fileName: "music_for_programming_32-chris_seddon.mp3",
+    compilerLinks: ["http://cseddon.co.uk/"],
+    notes: `\
+      Pulse Emitter - Purple
+      Atom TM - Tiefebene
+      TU M' - Monochrome #03
+      154 - Abrighterday
+      Susumu Yokota - Azukiiro No Kaori
+      Cluster - Imtrerion
+      John Beltran - Snowdrifts
+      Andrew Liles - The Dream Of The One Legged Woman
+      Global Communication - 4:02
+      Steve Hauschildt - Overnight Venusian
+      Susumu Yokota - Daremoshirani Chiisankuni
+      Cut Hands - ++++
+      ELpH vs. Coil - Manukind
+      Autechre - Yulqueen
+      In Aeternam Vale - Edit
+      Monolake - Terminal
+      `,
+  },
+
+  {
+    id: "thirtythree",
+    name: "33: uuav",
+    fileName: "music_for_programming_33-uuav.mp3",
+    compilerLinks: ["https://twitter.com/uuav"],
+    notes: `\
+      uuav - Onotram (Varroa Ex Soundtrack)
+      Joachim Holbek - Introduction
+      Dune - zeo-x-s
+      Greg Lo Piccolo, Tim Ries - Security
+      Cliff Martinez - Placenta Repair
+      Visionist - Can't Forget
+      uuav - Runawae (Varroa Ex Soundtrack)
+      Burial - Broken Home
+      Burial - Lambeth (Remix)
+      Greg Lo Piccolo, Tim Ries - Security
+      Autechre - Lost
+      Oneohtrix Point Never - Chrome Country
+      Unknown - I Hate You Kanye
+      Ulf Lohmann - Because
+      uuav - Micopa (Varroa Ex Soundtrack)
+      Carl Erik Rinsch - Escape The Map
+      `,
+  },
+
+  {
+    id: "thirtyfour",
+    name: "34: Chukus",
+    fileName: "music_for_programming_34-chukus.mp3",
+    compilerLinks: ["https://soundcloud.com/chukus"],
+    notes: `\
+      Ricardo Donoso - Overture
+      Jonsi and Alex - Sleeping Giant
+      Jon Hopkins - Abandon Window
+      Alva Noto - Xerrox Phaser Acat 1
+      Hecq - I Am You
+      Ben Lukas Boysen - You'll Miss Us One Day
+      M83 - Midnight Souls Still Remain
+      Steve Moore - Endless Mountains
+      Carbon Based Lifeforms - Arecibo
+      Vincent I Watson - Re-Contact
+      Miles - Loran Dreams
+      Blue Sky Boys - Will You Miss Me When I'm Gone
+      `,
+  },
+
+  {
+    id: "thirtyfive",
+    name: "35: Nadim Kobeissi",
+    fileName: "music_for_programming_35-nadim_kobeissi.mp3",
+    compilerLinks: ["https://nadim.computer/"],
+    notes: `\
+      VHS Head - Movies That Never Were
+      Steve Hauschildt - Uncanny Valley
+      Vangelis - Memories of Green
+      Steve Hauschildt - Coming Into View
+      Matt Carlson - Raindrop Garden
+      [PHYSICS] - Intrusion
+      Terry Riley - Desert of Ice
+      Emeralds - Living Room
+      Oneohtrix Point Never - Memory Vague
+      Oneohtrix Point Never - Ouroboro
+      `,
+  },
+
+  {
+    id: "thirtysix",
+    name: "36: Ea7_dmZ",
+    fileName: "music_for_programming_36-ea7_dmz.mp3",
+    compilerLinks: ["https://soundcloud.com/ea7_dmz"],
+    notes: `\
+      Thomas Köner - Une topographie Sonore
+      Reuber - Ruhig Blut A
+      Panamerican - Plains
+      Shuttle 358 - Fissure
+      Carl Stone - Chao Nue
+      Jan Jelinek and Computer Soup - The New Anthem
+      Tim Hecker - Song of the Highwire Shrimper
+      Pendler - Cph Pendler Music
+      Alva Noto - Modul 4
+      Hazard - Pylons 4
+      Thomas P. Heckmann - 08:29:47
+      Frank Bretschneider - Mr. Bowling Shoe Giver Outter
+      Thomas Brinkmann - 0101
+      Play Pause Trio - Pathétique
+      `,
+  },
+
+  {
+    id: "thirtyseven",
+    name: "37: Lackluster",
+    fileName: "music_for_programming_37-lackluster.mp3",
+    compilerLinks: ["https://lackluster.bandcamp.com/"],
+    notes: `\
+      Aphex Twin - Red Calx [SLO] (Soundcloud Dump) (-12 repitch)
+      Esa Ruoho - Oijoijoi (Places Ep)
+      Esa Ruoho - Maskaako (Places Ep) (+3 repitch)
+      Aphex Twin - Rhubarb Orb 19.53 Rev (Soundcloud Dump) (-3 repitch)
+      Esa Ruoho - Parched Throat (Parched Throat Ep)
+      Esa Ruoho - Riversmouth (Riversmouth Ep) (-2 repitch)
+      Lackluster - Monsanto Corporation (The Stationary Trout Ep) (-12 repitch)
+      Lackluster - TVLayers (Lax Ep) (-4 repitch)
+      Esa Ruoho - Molies #4 (Molies Ep)
+      Esa Ruoho - Interlude for Halcyon DVD (Places Ep) (-4 repitch)
+      Esa Ruoho - Glasnevin (On the Hangar of Spaceship Earth) (-4 repitch)
+      Esa Ruoho - Tiptoe (On the Hangar of Spaceship Earth)
+      Esa Ruoho - Incoming (unreleased)
+      `,
+  },
+
+  {
+    id: "thirtyeight",
+    name: "38: J.S. Aurelius",
+    fileName: "music_for_programming_38-j_s_aurelius.mp3",
+    compilerLinks: ["https://www.discogs.com/artist/3270321-JS-Aurelius"],
+    notes: `\
+      Software - Self-Similarity-Life
+      Black Tape For A Blue Girl - The Christ In The Desert
+      Electric Sewer Age - Moon's Milk (Waning)
+      Trans-Millenia Consort - Freebasing
+      Michael Stearns - Life In The Gravity Well
+      Bitchin Bajas - Bueu
+      J.S. Aurelius - Conjectures of a Guilty Bystander
+      M. Geddes Gengras - Night Work
+      Niggas With Guitars - Okkultistismist
+      Wavestar - Moonwind
+      Glochids - Pulse Sjilver
+      `,
+  },
+
+  {
+    id: "thirtynine",
+    name: "39: Kidding Kurrys",
+    fileName: "music_for_programming_39-kidding_kurrys.mp3",
+    compilerLinks: [
+      "https://soundcloud.com/kiddingkurrys",
+      "https://soundcloud.com/slowisthenewfast",
+    ],
+    notes: `\
+      Jerry Martin - New Terrain
+      Deepchord Presents Echospace - Untitled 7 + Glossata - Lampsace (sample)
+      Lusine Icl - Caught In The Middle
+      The Black Dog - Delay 9
+      Daughter Of The Industrial Revolution - The Folding Of Paper
+      Unknown Artist - Untitled 07/Track 02
+      Unknown Artist - Untitled 08/Track 01
+      Fennesz - Glass Ceiling
+      Unknown Artist - Untitled 04/Track 01
+      Unknown Artist - Untitled 09/Track 04
+      Tim Hecker - Sketch 3
+      The Black Dog - Terminal EMA
+      Bill Elm and Woody Jackson - Born Unto Trouble
+      Ben Frost - Sleeping Beauty
+      Unknown Artist - Untitled 04/Track 04
+      Experimental Audio Research - Untitled
+      Unknown Artist - Untitled 12/Track 04
+      Brian Eno - Lux (Nicolas Jaar Remix) (reversed)
+      Greg Haines - The Intruder
+      Demdike Stare - Leptonic Matter + Tim Hecker - Untitled
+      Unknown Artist - Untitled 05/Track 04
+      Moon Ate the Dark - Messy Hearts
+      `,
+  },
+
+  {
+    id: "forty",
+    name: "40: Mark Schneider",
+    fileName: "music_for_programming_40-mark_schneider.mp3",
+    compilerLinks: ["https://twitter.com/MarkASchneider"],
+    notes: `\
+      Michael Small - Klute Main Title
+      Tom Verlaine - Spiritual
+      Flying Lotus - Pickled (Stripped Version feat. Matthew David)
+      Plaid - Ralome
+      Quadro Asolano - G. Battista Fontana: Sonata IV per flauto soprano e organo
+      Wax Audio - Gyante Chants, Bali Prayer
+      Jerry Goldsmith - The Veldt 21st Century House
+      David Sylvian - Trauma
+      Cosmic Jokers - Queen of Sunshine / Meine Kosmische Musik
+      Death Cube K - Hanging Gallows
+      Boards of Canada - Breaking Nehushtan
+      Manuel Göttsching - Quasarsphere
+      John Lurie - Nicoletta Can't Cook
+      Raymond Scott - Little Miss Echo
+      Memory Tapes - Musicbox (Out)
+      `,
+  },
+
+  {
+    id: "fortyone",
+    name: "41: Sunjammer",
+    fileName: "music_for_programming_41-sunjammer.mp3",
+    compilerLinks: ["http://doomsday.no/"],
+    notes: `\
+      Hotel Neon - A Lament
+      Astral & Shit - Puls
+      Irezumi - Untitled 6
+      Ben Lukas Boysen - Blessed
+      Kashya - Tokyo
+      Velvet Cacoon - Dreaming in a hemlock patch
+      Secret Pyramid - A descent
+      Mushy - I will not see it
+      SiJ - There is no life without love
+      `,
+  },
+
+  {
+    id: "fortytwo",
+    name: "42: Datassette",
+    fileName: "music_for_programming_42-datassette.mp3",
+    compilerLinks: ["https://datassette.bandcamp.com/"],
+    notes: `\
+      Steve Everitt - Twa Brigs (edit)
+      Francis Monkman - Subterrain
+      Secreto Metro - Anteayer Nade En El Agua
+      Klimek - Ruined In A Day (Buenos Aires)
+      James Freeman - Crgbmpglp
+      Fis - Her Third Eye (Drum Rain)
+      Kora Et Le Mechanix - Kourou
+      Howlround feat. Abandoned Playground - OH
+      Alvin Curran - Canti E Vedute Del Giardino Magnetico (excerpt)
+      Vit Fana - Jag Glömmer Aldrig
+      Richard Skelton - The Black Water
+      R. Stevie Moore - For Vini
+      Lino Capra Vaccina - Motus (edit)
+      Gianni Proletti - Nothing Is Perfect
+      Chevel - Hexadecimal
+      Detritus - Nought (Brain Remix)
+      Odd Nodsam - T r i s h
+      `,
+  },
+
+  {
+    id: "fortythree",
+    name: "43: Hey Exit",
+    fileName: "music_for_programming_43-hey_exit.mp3",
+    compilerLinks: ["http://www.heyexit.com/"],
+    notes: `\
+      Ensemble De Organographia - Salpinx call / The Sappho Painter (5th c. BC)
+      Hey Exit - Our Ceiling Repairs
+      Oven Rake - Swimming Pool
+      Aki Onda - I Tell a Story of Bodies That Change (excerpt)
+      The Carmelite Nun of Luçon - The Burden of the Day
+      Grouper - Little Gray Cat
+      Hey Exit - So They Spoke
+      Geotic - Get Held
+      Jozef Van Wissem - Without the Rose / Iannis Xenakis - Bohor (excerpt)
+      Nocturnal Emissions - Wikka Man
+      Hey Exit - An American Flower
+      Loren Connors - Pretty As Ever (4) / The Cart Ride
+      Chieko Mori - Dreams
+      Zero Kama - Town of Pyramids (Night of Pan)
+      Danny Clay - Mt. Adams
+      Oren Ambarchi - Trailing Moss In Mystic Glow (excerpt)
+      The Test Results - Sisyphus2 (excerpt)
+      Mamoru Fujieda - The Sixth Collection, Pattern XXI
+      Khonnor - I Was Everything You Wanted Until I Quit
+      Hey Exit - Small Burials
+      Louis Andriessen - Deuxiéme Chorale
+      `,
+  },
+
+  {
+    id: "fortyfour",
+    name: "44: hukka",
+    fileName: "music_for_programming_44-hukka.mp3",
+    compilerLinks: ["https://soundcloud.com/hukka"],
+    notes: `\
+      hukka - Resolutions
+      William Basinski - DP 1.1
+      David Kristian - I Loved You
+      Mathias Grassow & Thomas Weiss - Indisputable Grace
+      hukka - ambi1
+      Experim3ntus - The Groke's Icy Tears
+      Flaa - Gauf's Room
+      Woob - Odonna
+      Klaus Schulze - Freeze
+      The Inventors of Aircraft - Hazel
+      hukka - Recurring
+      Biosphere - Translation
+      GAS - Zauberberg 7
+      Linus Akesson - Fratres (Arvo Pärt)
+      hukka - Convergence
+      Experim3ntus - Electric Waves
+      Chris McCormack - Erase Techno (B2)
+      `,
+  },
+
+  {
+    id: "fortyfive",
+    name: "45: Ehohroma",
+    fileName: "music_for_programming_45-ehohroma.mp3",
+    compilerLinks: ["https://soundcloud.com/ehohroma"],
+    notes: `\
+      Cremation Lily - Presence of Light
+      Stereo Nova - Asirmatos Kosmos
+      Rafael Anton Irisarri - Persistence
+      Deru - Three Cheers for Existence
+      Varg - Ursviken
+      Angelo Badalamenti - Laura Palmer's Theme
+      Museum - Little Dead Things
+      Boards of Canada - Tears From The Compound Eye
+      Ólafur Arnalds & Nils Frahm - 23:17
+      S Olbricht - Lacertid (feat. Imre Kiss)
+      Levantis - Jamaican Greek Style
+      Tim Hecker - Analog Paralysis, 1978
+      Aphex Twin - Aisatsana
+      `,
+  },
+
+  {
+    id: "fortysix",
+    name: "46: Jo Johnson",
+    fileName: "music_for_programming_46-jo_johnson.mp3",
+    compilerLinks: [
+      "https://jojohnson.bandcamp.com/",
+      "https://soundcloud.com/werkhouse",
+    ],
+    notes: `\
+      Hamid Ali Khan - Rag Malkauns: Alap
+      Oootini - Four Loops Set Running
+      Laurie Spiegel - The Unquestioned Answer
+      J D Emmanuel - Rain Forest
+      Brian Eno - An Arc of Doves
+      Pandit Shiv Kumar Sharma - Raga Kaushik Dhwani: Alap
+      Maggi Payne - Hikari
+      Satashi Ashikawa - Landscape of Wheels
+      Steve Roach - Structures from Silence
+      Jon Brooks - How the Land Lies
+      Tortoise - Four Day Interval
+      Eitetsu Hayashi - Karabinka
+      Steve Reich - New York Counterpoint 1. Fast
+      Lino Capra Vaccina - Movements and Silences for White Spaces
+      Raica - Satmor
+      Stars of the Lid - Mouthchew
+      Maggi Payne - Gamelan
+      Outer Space - February 8th, 1990 - Ashland, Ohio
+      Jonathan Fitoussi - Cassiopee
+      Sarah Davachi - A Garden, An Orchard
+      Tsering Tobgyal - Peace in Your Mind
+      J D Emmanuel - Focusing Within
+      Charlemagne Palestine - Schlingen-Blängen
+      `,
+  },
+
+  {
+    id: "fortyseven",
+    name: "47: Abe Mangger",
+    fileName: "music_for_programming_47-abe_mangger.mp3",
+    compilerLinks: ["https://soundcloud.com/abe_mangger"],
+    notes: `\
+      The Gordon Highlanders - Amazing Grace (Screwed)
+      G*Park - Gour
+      Marc Barreca - Memory Paths
+      Eroc - Des Zauberers Traum
+      Laurie Spiegel - Improvisation on a Concerto Generator
+      Steve Roach - Day One
+      Michael Stearns - In The Beginning
+      Ensemble Pearl - Giant
+      Toru Takemitsu - Rikyu
+      Terre Thaemlitz - Ageing Core, Ageing Periphery
+      The Soft Machine - Out-Bloody-Rageous
+      Cyclobe - Sentinels
+      Hildegard Westerkamp - Breathing Room
+      Chris Watson - No Man's Land
+      Fumio Kosakai - Earth Calling
+      Jean-Claude Risset - Sud
+      Michael Stearns - Sleeping Conches
+      Basil Kirchin - Emergence
+      Jaap Vink - Stroma
+      Roland Kayn - Etoral
+      Abe Mangger - The Bitter Tears of the Space Peacock
+      Manuel Göttsching - Quasarsphere
+      The Grateful Dead - Cease Tone Beam
+      The Soft Machine - Out-Bloody-Rageous
+      Kim Cascone - Rotational Beacon
+      Coil - Queens of the Circulating Library
+      John Duncan - Phantom Broadcast
+      Mark Isham - Skydive
+      Steve Hauschildt - Critique of the Beautiful
+      Tetsu Inoue - Peak
+      Pauline Oliveros - A Woman Sees How The World Goes With No Eyes
+      Yellow Magic Orchestra - Loom
+      Zoviet-France - Reson Deaw Gwalch
+      Kevin Drumm - I'll Never Go To Mass Again
+      Derek Bailey - Where Is The Police?
+      Terry Riley - Crossroads
+      L'Eclisse - Existential Flagpoles
+      Abe Mangger - Careless Marsbar
+      `,
+  },
+
+  {
+    id: "fortyeight",
+    name: "48: Michael Hicks",
+    fileName: "music_for_programming_48-michael_hicks.mp3",
+    compilerLinks: [
+      "https://michaelarts.bandcamp.com/",
+      "http://www.michaelarts.net/",
+    ],
+    notes: `\
+      Byron Westbrook - Infinite Sustain
+      Arvo Pärt - Für Alina
+      Kerkville - Next To Me
+      Lee Noble - Paradise Life
+      Balam Acab - Long
+      Heather Woods Broderick - For Misty
+      Morton Feldman - Rothko Chapel 5
+      Benoît Pioulard - Shut-Ins On Sunday See
+      Sigur Rós - Ofbirta
+      Jannick Schou - The Last Days Drove Off
+      `,
+  },
+
+  {
+    id: "fortynine",
+    name: "49: Julien Mier",
+    fileName: "music_for_programming_49-julien_mier.mp3",
+    compilerLinks: [
+      "https://julienmier.bandcamp.com/",
+      "https://twitter.com/julienmier",
+    ],
+    notes: `\
+      Ametsub - Over 6633
+      Mark Pritchard - Sad Alron
+      Halogen - Length And Brecht
+      Floex - Blow Up
+      Ochre - Paper Unicorn (Digitonal Transcription)
+      Julien Marchal - Insight XX
+      Beatsofreen - Sorrow
+      Flying Lotus - Infinitum
+      Four Tet - Gillie Amma I Love You
+      Machinedrum - Where Did We Go Wrong
+      Kettel - Goodbye In September
+      Jon Hopkins - Immunity
+      `,
+  },
+
+  {
+    id: "fifty",
+    name: "50: Misc.",
+    fileName: "music_for_programming_50-misc.works.mp3",
+    compilerLinks: ["http://misc.works/"],
+    notes: `\
+      Leyland Kirby - Tinseltown
+      Tengui - Conditions
+      Orrest - een°dag
+      Phill Niblock - P K
+      Tangerine Dream - Nebulous Dawn
+      Graham Dunning - Aggregate
+      Benedict Drew - A Hinge
+      Philip Jeck - All That's Allowed (live)
+      -1348- - Untitled
+      Mads Emil Nielsen - Glow
+      Malcolm Cecil - Gamelonia Dawn
+      Steve Legget - St. Croce Bells, Florence
+      Broadcast - Microtronics 20
+      Woo - Spaces We Breathe
+      Abdulla Rashim - Flatlands
+      Modern Art - Tu Quoque, Fili Mi
+      Sars - Amanda
+      Irsol - Drill
+      Yello - Thrill Wave
+      Aphex Twin - Avril Altdelay
+      Christ. - Dempsey
+      Unknown - Musique Et Appels Des Promineurs (Auvidis Library)
+      Our Grey Lives - Cacophony Nine
+      Agents of the Culture Industry - frgmnt
+      Burial - Beachfires
+      Music For Programming - Manifesto (Misc. Sludge Edit)
+      Grouper - Dragging The Streets
+      `,
+  },
+
+  {
+    id: "fiftyone",
+    name: "51: Mücha",
+    fileName: "music_for_programming_51-mücha.mp3",
+    compilerLinks: [
+      "https://misc-works.bandcamp.com/album/misc-works",
+      "https://moocha1.bandcamp.com/music",
+    ],
+    notes: `\
+      Windy and Carl - Antarctica
+      Alva Noto - Verrox Solphaer
+      Masayoshi Fujita & Jan Jelinek - Cin
+      Sam Prekop - Knitting Needles
+      Huerco S - Untitled
+      Kaitlin Aurelia Smith - When I Try I�m Full
+      Taylor Deupree & Marcus Fischer - Wake
+      Mica Levi & Oliver Coates - Pre Barok
+      Andrew Chalk - The Arkay Stream
+      Kara Lis Coverdale - Grigori In Jakarta
+      Iasos - Formentera Sunset Clouds
+      Bruised Skies - Tonight
+      Shuttle 358 - Imaginary Other
+      Benoit Pioulard - An Image Apart From Ourselves
+      Tim Hecker - No Drums
+      Oneohtrix Point Never - Ouroboros
+      Mücha - And his fleeting sun
+      K. Leimer Feat Dawn Seago - The Phonic Chasm
+      `,
+  },
+
+  {
+    id: "fiftytwo",
+    name: "52: Inchindown",
+    fileName: "music_for_programming_52-inchindown.mp3",
+    compilerLinks: [
+      "https://blankeditions.bandcamp.com/album/inchindown",
+      "https://moonzero.bandcamp.com/",
+      "https://bruisedskies.bandcamp.com/",
+    ],
+    notes: `\
+      Hiroshi Yoshimura - Feel
+      Rainforest Spiritual Enslavement - Chile's Crimson Tide
+      Brian Eno & Robert Fripp - Wind On Wind
+      AFX - Red Calx (Slo)
+      Paul Jebanasam - Rites I
+      Harold Budd & Brian Eno - Dark Eyed Sister
+      Godspeed You! Black Emperor - Providence
+      Grouper - Made Of Air
+      Boards Of Canada - Semena Mertvykh
+      Suzanne Ciani - Concert at WBAI
+      Cluster - Es War Einmal
+      Su Tissue - 2nd Movement
+      Sohrab - Somebody
+      Miles Davis - Selim
+      Sangam - Holy Reign Feat. HKE
+      2 8 1 4 - 恢复
+      Claude Speeed - Wellness Drone
+      Huerco S. - A Sea Of Love
+      Dedekind Cut - Descend From Now
+      Tim Hecker - Studio Suicide 1980
+      Kara-Lis Coverdale - Imgs
+      R Rafael Anton Irrisari - Sky Burial
+      Valiska - 5 Seconds
+      thomas9000 - Untitled
+      Polmo Polpo - Garca
+      FIS - Her Third Eye (Drum Rain)
+      Autechre - Altibzz
+      `,
+  },
+
+  {
+    id: "fiftythree",
+    name: "53: Beb Welten",
+    fileName: "music_for_programming_53-beb_welten.mp3",
+    compilerLinks: ["https://www.bebwelten.de/"],
+    notes: `\
+      T Raumschmiere - Do Not Open The Hatch In A Diving Submarine
+      Casual Violence - Unexpected Grace
+      Deadbeat - Walls & Dimensions
+      Anja Zaube - Sylvan Structure
+      The Result - Alias Of Your Mind
+      Katsunori Sawa - Evocation
+      Elemental - In Still
+      Steinbrüchel - 1b
+      Emile - Untitled
+      Albert Van Abbe - Ostinato 04
+      Jon Porras - New Monument
+      Jonas Kopp - El Alba Vos Y Yo
+      Abul Mogard - House On The River
+      Paul Mitchell - Black
+      Strategy - Awesome Piano
+      Anowone - Lp03d
+      Abul Mogard - Sound Universe
+      Marco M. Bernd - Prism Dub Redux
+      Basic Channel - Octagon
+      `,
+  },
+
+  {
+    id: "fiftyfour",
+    name: "54: HLER",
+    fileName: "music_for_programming_54-hler.mp3",
+    compilerLinks: [
+      "https://hler.bandcamp.com",
+      "https://www.instagram.com/hlerdrone/",
+    ],
+    notes: `\
+      HLER Live at The Bunker (5th August 2018)
+      `,
+  },
+
+  {
+    id: "fiftyfive",
+    name: "55: 20 Jazz Funk Greats",
+    fileName: "music_for_programming_55-20_jazz_funk_greats.mp3",
+    compilerLinks: ["http://20jazzfunkgreats.co.uk/"],
+    notes: `\
+      H Takahashi - =...
+      H Takahashi - Quiet
+      Satoshi Ashikawa - Still Sky
+      Hiroshi Yoshimura - Green Shower
+      Hiroshi Yoshimura - Creek
+      Yutaka Hiroshe - Slow Sky
+      Visible Cloaks feat. Miyako Koda - Valve (Revisited)
+      Hiroshi Yoshimura - Silence
+      Toshifumi Hinata - Broken Belief
+      Midori Takada - Crossing
+      Mkwaju Ensemble - Lemore
+      `,
+  },
+
+  {
+    id: "fiftysix",
+    name: "56: Forest Drive West",
+    fileName: "music_for_programming_56-forest_drive_west.mp3",
+    compilerLinks: ["https://soundcloud.com/forest-drive-west"],
+    notes: `\
+      Forest Drive West - Untitled
+      Shed - The Traveller
+      Tim Hecker - Arctic Lover's Rock
+      Forest Drive West - Dalyan
+      Mountains Mountains Mountains - Nest
+      Forest Drive West - Fingal's Cave
+      Knuckleduster - Nuukoono
+      Alva Noto - T3 (for Dieter Rams)
+      Forest Drive West - Untitled
+      Moniker - Untitled
+      Esmerine - Hayale Dalmak
+      cLOUDDEAD - Cloud Dead Number Five, Pt. 1
+      Forest Drive West - Buskers Delight
+      X-Piano Orchestra - Gongs And Clicks
+      Forest Drive West - Untitled
+      Jon Hassell - Clairvoyance
+      K. Leimer - Ikumi
+      Atom TM - Wellen Und Felder I
+      `,
+  },
+
+  {
+    id: "fiftyseven",
+    name: "57: Hainbach",
+    fileName: "music_for_programming_57-hainbach.mp3",
+    compilerLinks: [
+      "https://www.hainbachmusik.com/",
+      "https://misc-works.bandcamp.com/album/impulsgenerator",
+    ],
+    notes: `\
+      Maps and Diagrams - excerpt from Azurescens
+      Emily Sprague - excerpt from Friends
+      Scott Campbell - excerpt from Photos From The Flood
+      J Butler - excerpt from Found
+      Healthy Lives - excerpt from Interiors
+      Minicomponente - excerpt from In Tu
+      Hainbach - excerpt from VA / 1 Year (Soil Records)
+      Signal Mountain - excerpt from Familiar Trails
+      Ian Boddy - excerpt from String Fragment 1984
+      `,
+  },
+
+  {
+    id: "fiftyeight",
+    name: "58: OliSUn",
+    fileName: "music_for_programming_58-olive_is_the_sun.mp3",
+    compilerLinks: ["https://oliveisthesun.bandcamp.com/"],
+    notes: `\
+      The Glove - A Blues In Drag
+      Etienne Daho - Ouverture (OliSUn ReWork)
+      Keith Jarrett - Köln Concert, Pt. IIa
+      \xA0\xA0\xA0 + Field Recording 22/7/2018 Metro Paris
+      Sufjan Stevens - For Clyde Tombaugh
+      Amulets - Endless Tape Loop Cassette
+      OliSUn - Untitled, Unreleased
+      Spectrum - My Love For You Never Died Away But My Soul Gave Out & Withered
+      \xA0\xA0\xA0 + Ma Vie Chez Maud (Excerpt)
+      Sea Glasses - Summer From The Basement
+      Setter - Soft Serve
+      Dirty Beaches - Goodbye, Honolulu
+      `,
+  },
+
+  {
+    id: "fiftynine",
+    name: "59: Miunau",
+    fileName: "music_for_programming_59-miunau.mp3",
+    compilerLinks: [
+      "https://miunau.com/",
+      "https://soundcloud.com/miunau",
+      "https://twitter.com/miuott",
+    ],
+    notes: `\
+      All tracks by Miunau:
+
+      Healing Loop 5
+      Healing Loop 5 (MFP Reduce)
+      Healing 4
+      Healing 4 (MFP Reduce)
+      Reduce 12 (For Swish)
+      Phase Movement
+      Duotone (MFP Reduce)
+      M4L Crash Loop Float 2 (MFP Version)
+      Introspection X (MFP Version)
+      Introspection IV (MFP Version)
+      M4L Crash Loop Float 7 (MFP Version)
+      Little Fox (MFP Version)
+      Gold 2
+      Purple 5 (MFP Reduce)
+      Eye Of The Snow Leopard
+      End
+      `,
+  },
+
+  {
+    id: "sixty",
+    name: "60: TUNDRA",
+    fileName: "music_for_programming_60-tundra.mp3",
+    compilerLinks: [
+      "http://wearetundra.org/",
+      "https://www.instagram.com/wearetundra/",
+    ],
+    notes: `\
+      All tracks by TUNDRA:
+
+      Breathing part (DWLF installation)
+      Memories of Taiga
+      Rhodesia Drone
+      Anokhin Speaks (My Whale installation)
+      Mountaniac Intervals Drone
+      Transcendental sequence
+      Pozhar (DWLF installation)
+      DWLF Main Theme (DWLF Installation)
+      Transcendental Drone
+      Fantome (My Whale installation)
+      Aphex Queen
+      Noise in My Heart
+      Noise in My Ears + ROW voices (ROW installation)
+      Memories of Taiga (part 2)
+      Major Flight Drone
+      Nomad sequence (Nomad installation)
+      Anxiety drone + Sao Paulo field recordings
+      Blue Scan (DWLF installation)
+      DWLF Birds Lfo
+      Your Inner Whale (My Whale installation)
+      Luminous Hexagonal (My Whale installation)
+      Skazka (MFP outro)
+      `,
+  },
+
+  {
+    id: "sixtyone",
+    name: "61: Linnley",
+    fileName: "music_for_programming_61-linnley.mp3",
+    compilerLinks: ["https://soundcloud.com/linnley-music"],
+    notes: `\
+      Tomoko Sauvage - Clepsydra
+      Roberto Musci - Tantric Hymns
+      Pier Luigi Andreoni, Francesco Paladino - Aeolyca part I
+      Linnley - Iwahig
+      Andrew Pekler - Hy Brasil
+      Cofaxx - From Memory pt. 2
+      Miguel Noya - Megabrain Focos part 1
+      Ali Wade - My Mind Laid Out Before Me
+      AI?-?19 - Metamorfosi
+      Dravier - Ercoupe
+      excael - into deep
+      CV & JAB - Rock House with Door
+      Linnley - Homedown
+      William Selman - Polysemy
+      Pontiac Streator & Ulla Straus - Item 10
+      `,
+  },
+
+  {
+    id: "sixtytwo",
+    name: "62: Our Grey Lives",
+    fileName: "music_for_programming_62-our_grey_lives.mp3",
+    compilerLinks: ["https://misc-works.bandcamp.com/album/cacophonies"],
+    notes: `\
+      10th Anniversary Special
+      ----------------------
+
+      Episodes 1 to 61 of Music For Programming (the first ten years of the series) were edited to equal lengths and played simultaneously. The resulting cacophony was passed multiple times through an array of analogue and virtual signal processing devices until the centre-of-gravity between antagonism and attractiveness was found.
+
+      During the process, multiple layers of infrasonic modulation were introduced at varying timescales, from 0.001Hz to around 24Hz. Each modulation frequency being a 1.618 (golden ratio) factor of the slowest, most noticeable root modulation, which in this case is a 'spectral contrast' processor that gradually plunges the soundscape into a watery abyss every 110 seconds before slowly bobbing up to the surface again to gasp for air.
+      `,
+  },
 ];
 
 const episodeDatas: EpisodeData[] = episodeRawDatas.map((o, i) => ({

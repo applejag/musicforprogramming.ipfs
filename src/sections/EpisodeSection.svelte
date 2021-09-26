@@ -8,10 +8,7 @@
 
   export let currentEpisode: EpisodeData;
 
-  $: notesLines = currentEpisode.notes
-    .trim()
-    .split("\n")
-    .map((o) => o.trim());
+  $: notesLines = currentEpisode.notes.trim().split("\n");
 </script>
 
 <MainSection title={currentEpisode.name}>
