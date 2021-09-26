@@ -2,7 +2,7 @@
   import AudioPlayer from "../AudioPlayer.svelte";
   import Link from "../Link.svelte";
   import type { EpisodeData } from "../libs/episodes-repo";
-  import Section from "./Section.svelte";
+  import MainSection from "./base/MainSection.svelte";
 
   export let currentEpisode: EpisodeData;
 
@@ -12,8 +12,7 @@
     .map((o) => o.trim());
 </script>
 
-<Section>
-  <h2 class="episode-name">{currentEpisode.name}</h2>
+<MainSection title={currentEpisode.name}>
   <AudioPlayer
     src={currentEpisode.fileRelUrl}
     displaySrc={currentEpisode.fileName}
@@ -35,24 +34,12 @@
       </ul>
     {/if}
   </p>
-</Section>
+</MainSection>
 
 <style lang="scss">
-  @import "../styles/variables.scss";
-
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-
-  h2 {
-    display: inline;
-    font-size: inherit;
-    font-weight: inherit;
-  }
-
-  .episode-name {
-    color: $palette_green;
   }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Section from "./Section.svelte";
+  import Section from "./base/Section.svelte";
   import { getAllEpisodeData } from "../libs/episodes-repo";
 
   export let currentEpisodeId: string = null;

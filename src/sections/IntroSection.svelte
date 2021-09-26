@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Section from "./Section.svelte";
+  import Section from "./base/Section.svelte";
 </script>
 
 <Section title="Introduction">
