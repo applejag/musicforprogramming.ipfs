@@ -10,6 +10,8 @@ Listen to music while you program, streamed via the peer-to-peer technology [IPF
 
 ## View it online: 👉 [`ipns://mfp.jillejr.tech`](ipns://mfp.jillejr.tech) 👈
 
+### Addresses
+
 ```
 /ipns/mfp.jillejr.tech                                                DNSLink
 /ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                  CIDv0
@@ -20,6 +22,16 @@ ipfs://QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                 CIDv0
 ipfs://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq    CIDv1
 ```
 
+### HTTP gateways
+
+- IPFS.io via DNSLink: <https://ipfs.io/ipns/mfp.jillejr.tech/>
+- IPFS.io via CIDv0: <https://ipfs.io/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR/>
+- IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq/>
+- dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
+- dweb.link via CIDv1: <https://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.dweb.link/>
+
+## Speeding up connection
+
 ### Seeding peers
 
 Adding known seeding peers will speed up the dApp as that gives your local IPFS node a known place to download the files from.
@@ -27,7 +39,7 @@ Adding known seeding peers will speed up the dApp as that gives your local IPFS 
 Multiaddresses of peers:
 
 ```multiaddr
-/ip4/139.162.175.151/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+/ip4/139.162.175.151/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
 ```
 
 - If you're using the [IPFS Companion](https://github.com/ipfs/ipfs-companion) browser extension or the [IPFS Desktop](https://github.com/ipfs/ipfs-desktop) app
@@ -40,22 +52,76 @@ Multiaddresses of peers:
   - Run the following command:
 
     ```console
-    $ ipfs swarm connect /ip4/139.162.175.151/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+    $ ipfs swarm connect /ip4/139.162.175.151/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
     connect 12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC success
     ```
 
-### Alternatives via gateways
+### Disabling TCP connections on your local node
 
-- IPFS.io via DNSLink: <https://ipfs.io/ipns/mfp.jillejr.tech/>
-- IPFS.io via CIDv0: <https://ipfs.io/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR/>
-- IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq/>
-- dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
-- dweb.link via CIDv1: <https://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.dweb.link/>
-- Local IPFS node (port 8080) via DNSLink: <http://mfp.jillejr.tech.ipns.localhost:8080/>
-- Local IPFS node (port 8080) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:8080/>
-- Local IPFS node (port 4001) via DNSLink: <http://mfp.jillejr.tech.ipns.localhost:4001/>
-- Local IPFS node (port 4001) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:4001/>
-- _ok that's probably enough alternatives..._
+IPFS will happily connect up to 300-600 other peers, with one TCP connection towards each. Unless you have a super computer and super-duper router, and even super-er-er Internet connection, then this can stress out your PC's OS and even your router.
+
+But there's an alternative: QUIC over UDP!
+
+QUIC over UDP is enabled by default, but to make your computer happier you can disable all TCP connections. The drawbacks are that not all peers support the UDP/QUIC IPFS connection type. But when comparing _"somewhat usable with QUIC"_ vs _"locks up my home's internet so I can't even google why it's happening"_, the former takes precedence.
+
+Edit your IPFS config by changing the following values:
+
+```diff
+ {
+ 	"API": {
+ 		"HTTPHeaders": {}
+ 	},
+ 	"Addresses": {
+ 		"API": "/ip4/127.0.0.1/tcp/5991",
+ 		"Announce": [],
+ 		"Gateway": "/ip4/127.0.0.1/tcp/9123",
+ 		"NoAnnounce": [],
+ 		"Swarm": [
+-			"/ip4/0.0.0.0/tcp/4001",
+-			"/ip6/::/tcp/4001",
+ 			"/ip4/0.0.0.0/udp/4001/quic",
+ 			"/ip6/::/udp/4001/quic"
+ 		]
+ 	},
+ 	"AutoNAT": {},
+ 	// ...
+ 	"Reprovider": {
+ 		"Interval": "12h",
+ 		"Strategy": "all"
+ 	},
+ 	"Routing": {
+ 		"Type": "dht"
+ 	},
+ 	"Swarm": {
+ 		"AddrFilters": null,
+ 		"ConnMgr": {
+ 			"GracePeriod": "300s",
+ 			"HighWater": 300,
+ 			"LowWater": 50,
+ 			"Type": "basic"
+ 		},
+ 		"DisableBandwidthMetrics": false,
+ 		"DisableNatPortMap": false,
+ 		"EnableAutoRelay": false,
+ 		"EnableRelayHop": false,
+ 		"Transports": {
+ 			"Multiplexers": {},
+-			"Network": {},
++			"Network": {
++				"TCP": false,
++				"Websocket": false
++			},
+ 			"Security": {}
+ 		}
+ 	}
+ }
+```
+
+The first section of removals disables incoming connections to use TCP. (Docs: [`Addresses.Swarm`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#addressesswarm))
+
+The latter section of changes will disable Websockets (which uses TCP) and pure TCP connections for when your local node connects to other peers. (Docs: [`Swarm.Transports.Network`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmtransportsnetwork))
+
+Make sure to restart your IPFS node for the changes to take effect. For IPFS Desktop, that would be to click the system tray icon of IPFS and then selecting <kbd>Restart</kbd>. For IPFS in Brave, just restart the browser (all windows must be closed).
 
 ## Why does this repo exist
 
