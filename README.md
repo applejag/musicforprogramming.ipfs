@@ -37,12 +37,12 @@ Listen to music while you program, streamed via the peer-to-peer technology [IPF
 
 ### Difference with [musicforprogramming.net][mfp]
 
-|                    | This repo          | [musicforprogramming.net][mfp] |
-| ------------------ | ------------------ | ------------------------------ |
-| Hosting            | [IPFS][ipfs]       | HTTP                           |
-| Backend            | None (static site) | PHP (I'm guessing?)            |
-| Frontend framework | [Svelte][svelte]   | [jQuery][jquery]               |
-| Originality        | _Barely any_       | _Tons_                         |
+|                    | This repo                | [musicforprogramming.net][mfp] |
+| ------------------ | ------------------------ | ------------------------------ |
+| Hosting            | [IPFS][ipfs] (over HTTP) | HTTP                           |
+| Backend            | None (static site)       | PHP (I'm guessing?)            |
+| Frontend framework | [Svelte][svelte]         | [jQuery][jquery]               |
+| Originality        | _Barely any_             | _Tons_                         |
 
 ## Development
 
