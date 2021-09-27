@@ -14,6 +14,10 @@ Listen to music while you program, streamed via the peer-to-peer technology [IPF
 /ipns/mfp.jillejr.tech                                                DNSLink
 /ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                  CIDv0
 /ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq     CIDv1
+
+ipns://mfp.jillejr.tech                                               DNSLink
+ipfs://QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                 CIDv0
+ipfs://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq    CIDv1
 ```
 
 ### Seeding peers
