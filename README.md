@@ -16,6 +16,30 @@ Listen to music while you program, streamed via the peer-to-peer technology [IPF
 /ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq     CIDv1
 ```
 
+### Seeding peers
+
+Adding known seeding peers will speed up the dApp as that gives your local IPFS node a known place to download the files from.
+
+Multiaddresses of peers:
+
+```multiaddr
+/ip4/127.0.0.1/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+```
+
+- If you're using the [IPFS Companion](https://github.com/ipfs/ipfs-companion) browser extension or the [IPFS Desktop](https://github.com/ipfs/ipfs-desktop) app
+
+  - Open the control panel UI and enter the "PEERS" tab from the left sidenav.
+  - Then click <kbd>+ Add connection</kbd> and paste a peer multiaddress from above.
+
+- If you're using the [IPFS CLI](https://github.com/ipfs/go-ipfs)
+
+  - Run the following command:
+
+    ```console
+    $ ipfs swarm connect /ip4/127.0.0.1/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+    connect 12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC success
+    ```
+
 ### Alternatives via gateways
 
 - IPFS.io via DNSLink: <https://ipfs.io/ipns/mfp.jillejr.tech/>
