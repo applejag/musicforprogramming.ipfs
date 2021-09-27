@@ -40,6 +40,7 @@ Multiaddresses of peers:
 
 ```multiaddr
 /ip4/139.162.175.151/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
 ```
 
 - If you're using the [IPFS Companion](https://github.com/ipfs/ipfs-companion) browser extension or the [IPFS Desktop](https://github.com/ipfs/ipfs-desktop) app
