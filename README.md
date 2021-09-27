@@ -3,6 +3,8 @@
 This is a port of [musicForProgramming.net][mfp] remade with [Svelte][svelte]
 and aimed to be hosted with [IPFS][ipfs].
 
+![2021-09-27 02_07_31-Window](https://user-images.githubusercontent.com/2477952/134829029-35ff610a-6317-4483-8441-a59be53d0c43.png)
+
 Most of the content in this repository are the result of
 [Datassette's][datassette] hard work. All love goes to Datassette and the
 contributors to [musicForProgramming.net][mfp] for making such a wonderful site
