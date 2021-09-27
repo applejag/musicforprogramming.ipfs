@@ -27,7 +27,7 @@ Adding known seeding peers will speed up the dApp as that gives your local IPFS 
 Multiaddresses of peers:
 
 ```multiaddr
-/ip4/127.0.0.1/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+/ip4/139.162.175.151/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
 ```
 
 - If you're using the [IPFS Companion](https://github.com/ipfs/ipfs-companion) browser extension or the [IPFS Desktop](https://github.com/ipfs/ipfs-desktop) app
@@ -40,7 +40,7 @@ Multiaddresses of peers:
   - Run the following command:
 
     ```console
-    $ ipfs swarm connect /ip4/127.0.0.1/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+    $ ipfs swarm connect /ip4/139.162.175.151/tcp/4001/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
     connect 12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC success
     ```
 
