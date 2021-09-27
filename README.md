@@ -23,9 +23,9 @@ Listen to music while you program, streamed via the peer-to-peer technology [IPF
 - IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq/>
 - dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
 - dweb.link via CIDv1: <https://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.dweb.link/>
-- Local IPFS node (port 8080) via DNSLink: <http://mfp-jillejr-tech.ipns.localhost:8080/>
+- Local IPFS node (port 8080) via DNSLink: <http://mfp.jillejr.tech.ipns.localhost:8080/>
 - Local IPFS node (port 8080) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:8080/>
-- Local IPFS node (port 4001) via DNSLink: <http://mfp-jillejr-tech.ipns.localhost:4001/>
+- Local IPFS node (port 4001) via DNSLink: <http://mfp.jillejr.tech.ipns.localhost:4001/>
 - Local IPFS node (port 4001) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:4001/>
 - _ok that's probably enough alternatives..._
 
