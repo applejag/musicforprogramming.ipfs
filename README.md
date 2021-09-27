@@ -1,41 +1,52 @@
 # musicForProgramming("IPFS!");
 
-This is a port of [musicForProgramming.net][mfp] remade with [Svelte][svelte]
-and aimed to be hosted with [IPFS][ipfs].
+Listen to music while you program, streamed via the peer-to-peer technology [IPFS][ipfs]. The music comes from [musicforprogramming.net][mfp], and has been carefully chosen to maximize concentration by providing just the right amount of interest to occupy the parts of your brain that would otherwise be left free to wander and lead to distraction during your work.
 
 ![2021-09-27 02_07_31-Window](https://user-images.githubusercontent.com/2477952/134829029-35ff610a-6317-4483-8441-a59be53d0c43.png)
 
-Most of the content in this repository are the result of
-[Datassette's][datassette] hard work. All love goes to Datassette and the
-contributors to [musicForProgramming.net][mfp] for making such a wonderful site
-that I've had so many hours of great use from. ❤
+> This web page was stumbled together by [@jilleJr](https://github.com/jilleJr) in Visual Studio Code. It is a dApp port of the wonderful [musicforprogramming.net][mfp], rewritten in [Svelte][svelte] in the plan of hosting it [IPFS][ipfs].
+>
+> This site was _originally_ knocked together by [Datassette][datassette] in SublimeText. Episodes are faffed with using iZotope Ozone and Adobe Audition to maintain comparable loudness and frequency presence between episodes.
 
-```js
-//  __/\\\\____________/\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\___
-//   _\/\\\\\\________/\\\\\\_\/\\\///////////__\/\\\/////////\\\_
-//    _\/\\\//\\\____/\\\//\\\_\/\\\_____________\/\\\_______\/\\\_
-//     _\/\\\\///\\\/\\\/_\/\\\_\/\\\\\\\\\\\_____\/\\\\\\\\\\\\\/__
-//      _\/\\\__\///\\\/___\/\\\_\/\\\///////______\/\\\/////////____
-//       _\/\\\____\///_____\/\\\_\/\\\_____________\/\\\_____________
-//        _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
-//         _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
-//          _\///______________\///__\///______________\///______________
+## View it online: 👉 [`ipns://mfp.jillejr.tech`](ipns://mfp.jillejr.tech) 👈
+
+```
+/ipns/mfp.jillejr.tech                                                DNSLink
+/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                  CIDv0
+/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq     CIDv1
 ```
 
-## View it online
+### Alternatives via gateways
 
-_Yea not yet. It's work in progress, see?_
+- IPFS.io via DNSLink: <https://ipfs.io/ipns/mfp.jillejr.tech/>
+- IPFS.io via CIDv0: <https://ipfs.io/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR/>
+- IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq/>
+- dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
+- dweb.link via CIDv1: <https://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.dweb.link/>
+- Local IPFS node (port 8080) via DNSLink: <http://mfp-jillejr-tech.ipns.localhost:8080/>
+- Local IPFS node (port 8080) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:8080/>
+- Local IPFS node (port 4001) via DNSLink: <http://mfp-jillejr-tech.ipns.localhost:4001/>
+- Local IPFS node (port 4001) via CIDv1: <http://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.localhost:4001/>
+- _ok that's probably enough alternatives..._
 
-## Difference with [musicforprogramming.net][mfp]
+## Why does this repo exist
+
+1. I wanted to try developing with Svelte
+2. I wanted to try publishing to IPFS
+3. I want to use more dApps in everyday life, and this is a :100: everyday app for me
+
+### Difference with [musicforprogramming.net][mfp]
 
 |                    | This repo          | [musicforprogramming.net][mfp] |
 | ------------------ | ------------------ | ------------------------------ |
 | Hosting            | [IPFS][ipfs]       | HTTP                           |
-| Backend            | None (static site) | PHP                            |
+| Backend            | None (static site) | PHP (I'm guessing?)            |
 | Frontend framework | [Svelte][svelte]   | [jQuery][jquery]               |
 | Originality        | _Barely any_       | _Tons_                         |
 
-## Setting up dev env
+## Development
+
+### Setting up dev env
 
 1. Install [Node.js][node-dl] (v14 or greater) and download all code
    dependencies using `npm`:
@@ -54,7 +65,7 @@ _Yea not yet. It's work in progress, see?_
 
    Place the downloaded songs in `public/audio/*.mp3`.
 
-## Developing
+### Serve local files
 
 Serve code locally with live reloading on code change:
 
@@ -68,6 +79,25 @@ Visit <http://localhost:5000/>.
 
 This repo has not yet been assigned an open source license, as I need to clear
 up with the original author if this repo is even allowed.
+
+To be clear: I, jilleJr, am not the author of musicforprogramming.net.
+
+Most of the content in this repository are the result of
+[Datassette's][datassette] hard work. All love goes to Datassette and the
+contributors to [musicforprogramming.net][mfp] for making such a wonderful site
+that I've had so many hours of great use from. ❤
+
+```js
+//  __/\\\\____________/\\\\__/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\___
+//   _\/\\\\\\________/\\\\\\_\/\\\///////////__\/\\\/////////\\\_
+//    _\/\\\//\\\____/\\\//\\\_\/\\\_____________\/\\\_______\/\\\_
+//     _\/\\\\///\\\/\\\/_\/\\\_\/\\\\\\\\\\\_____\/\\\\\\\\\\\\\/__
+//      _\/\\\__\///\\\/___\/\\\_\/\\\///////______\/\\\/////////____
+//       _\/\\\____\///_____\/\\\_\/\\\_____________\/\\\_____________
+//        _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
+//         _\/\\\_____________\/\\\_\/\\\_____________\/\\\_____________
+//          _\///______________\///__\///______________\///______________
+```
 
 [node-dl]: https://nodejs.org/en/download/
 [ipfs]: https://ipfs.io/
