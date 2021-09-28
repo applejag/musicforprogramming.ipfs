@@ -36,26 +36,68 @@ ipfs://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq    CIDv1
 
 Adding known seeding peers will speed up the dApp as that gives your local IPFS node a known place to download the files from.
 
-Multiaddresses of peers:
+Peers
 
-```multiaddr
-/ip4/139.162.175.151/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
-/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
+```js
+[
+  {
+    "Addrs": [
+      "/ip4/139.162.175.151/udp/4001/quic",
+      "/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic"
+    ],
+    "ID": "12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC"
+  }
+]
 ```
 
-- If you're using the [IPFS Companion](https://github.com/ipfs/ipfs-companion) browser extension or the [IPFS Desktop](https://github.com/ipfs/ipfs-desktop) app
+Edit your IPFS config by adding the above peer:
 
-  - Open the control panel UI and enter the "PEERS" tab from the left sidenav.
-  - Then click <kbd>+ Add connection</kbd> and paste a peer multiaddress from above.
+```diff
+ {
+   // ...
 
-- If you're using the [IPFS CLI](https://github.com/ipfs/go-ipfs)
+  "Ipns": {
+    "RecordLifetime": "",
+    "RepublishPeriod": "",
+    "ResolveCacheSize": 128
+  },
+  "Migration": {
+    "DownloadSources": [],
+    "Keep": ""
+  },
+  "Mounts": {
+    "FuseAllowOther": false,
+    "IPFS": "/ipfs",
+    "IPNS": "/ipns"
+  },
+  "Peering": {
+-   "Peers": null
++   "Peers": [
++     {
++       "Addrs": [
++         "/ip4/139.162.175.151/udp/4001/quic",
++         "/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic"
++       ],
++       "ID": "12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC"
++     }
++   ]
+  },
+  "Pinning": {
+    "RemoteServices": {}
+  },
+  "Plugins": {
+    "Plugins": null
+  },
+  "Provider": {
+    "Strategy": ""
+  },
+  // ...
+}
+```
 
-  - Run the following command:
+This will make sure your local IPFS node does not disconnect from the peer when it's inactive, as finding the peer again takes a lot of time. (Docs: [`Peering.Peers`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peeringpeers))
 
-    ```console
-    $ ipfs swarm connect /ip4/139.162.175.151/udp/4001/quic/p2p/12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC
-    connect 12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC success
-    ```
+If adding multiple peers, make sure to add a comma `,` on all but the last closing object brace `}`.
 
 ### Disabling TCP connections on your local node
 
@@ -69,52 +111,52 @@ Edit your IPFS config by changing the following values:
 
 ```diff
  {
- 	"API": {
- 		"HTTPHeaders": {}
- 	},
- 	"Addresses": {
- 		"API": "/ip4/127.0.0.1/tcp/5991",
- 		"Announce": [],
- 		"Gateway": "/ip4/127.0.0.1/tcp/9123",
- 		"NoAnnounce": [],
- 		"Swarm": [
--			"/ip4/0.0.0.0/tcp/4001",
--			"/ip6/::/tcp/4001",
- 			"/ip4/0.0.0.0/udp/4001/quic",
- 			"/ip6/::/udp/4001/quic"
- 		]
- 	},
- 	"AutoNAT": {},
- 	// ...
- 	"Reprovider": {
- 		"Interval": "12h",
- 		"Strategy": "all"
- 	},
- 	"Routing": {
- 		"Type": "dht"
- 	},
- 	"Swarm": {
- 		"AddrFilters": null,
- 		"ConnMgr": {
- 			"GracePeriod": "300s",
- 			"HighWater": 300,
- 			"LowWater": 50,
- 			"Type": "basic"
- 		},
- 		"DisableBandwidthMetrics": false,
- 		"DisableNatPortMap": false,
- 		"EnableAutoRelay": false,
- 		"EnableRelayHop": false,
- 		"Transports": {
- 			"Multiplexers": {},
--			"Network": {},
-+			"Network": {
-+				"TCP": false,
-+				"Websocket": false
-+			},
- 			"Security": {}
- 		}
- 	}
+   "API": {
+     "HTTPHeaders": {}
+   },
+   "Addresses": {
+     "API": "/ip4/127.0.0.1/tcp/5991",
+     "Announce": [],
+     "Gateway": "/ip4/127.0.0.1/tcp/9123",
+     "NoAnnounce": [],
+     "Swarm": [
+-      "/ip4/0.0.0.0/tcp/4001",
+-      "/ip6/::/tcp/4001",
+       "/ip4/0.0.0.0/udp/4001/quic",
+       "/ip6/::/udp/4001/quic"
+     ]
+   },
+   "AutoNAT": {},
+   // ...
+   "Reprovider": {
+     "Interval": "12h",
+     "Strategy": "all"
+   },
+   "Routing": {
+     "Type": "dht"
+   },
+   "Swarm": {
+     "AddrFilters": null,
+     "ConnMgr": {
+       "GracePeriod": "300s",
+       "HighWater": 300,
+       "LowWater": 50,
+       "Type": "basic"
+     },
+     "DisableBandwidthMetrics": false,
+     "DisableNatPortMap": false,
+     "EnableAutoRelay": false,
+     "EnableRelayHop": false,
+     "Transports": {
+       "Multiplexers": {},
+-      "Network": {},
++      "Network": {
++        "TCP": false,
++        "Websocket": false
++      },
+       "Security": {}
+     }
+   }
  }
 ```
 
