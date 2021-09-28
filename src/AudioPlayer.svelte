@@ -8,8 +8,8 @@
 
   export let src: string;
   export let displaySrc: string = src;
-  let audio: HTMLAudioElement;
 
+  let audio: HTMLAudioElement;
   let timeString = "--:--:--";
 
   enum PlayState {
@@ -20,9 +20,17 @@
   }
   let state = PlayState.Loading;
 
-  let fileSizePromise: Promise<string> = fetchContentLengthBytes(src).then(
-    (o) => (o ? Math.floor(o / 1000 / 1000) + "mb" : null)
-  );
+  $: fileSizePromise = fetchFileSize(src);
+
+  async function fetchFileSize(src: string): Promise<string | null> {
+    state = PlayState.Loading;
+    updateTimeString();
+    const bytes = await fetchContentLengthBytes(src);
+    if (!bytes) {
+      return null;
+    }
+    return Math.floor(bytes / 1000 / 1000) + "mb";
+  }
 
   function updateTimeString() {
     if (state === PlayState.Loading) {
@@ -93,6 +101,9 @@
   }
 
   function onkeydown(e: KeyboardEvent) {
+    if (state === PlayState.Loading) {
+      return;
+    }
     switch (e.code) {
       case "Space":
         if (state === PlayState.Playing) {
