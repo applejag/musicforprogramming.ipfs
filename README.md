@@ -1,12 +1,21 @@
 # musicForProgramming("IPFS!");
 
-Listen to music while you program, streamed via the peer-to-peer technology [IPFS][ipfs]. The music comes from [musicforprogramming.net][mfp], and has been carefully chosen to maximize concentration by providing just the right amount of interest to occupy the parts of your brain that would otherwise be left free to wander and lead to distraction during your work.
+Listen to music while you program, streamed via the peer-to-peer technology
+[IPFS][ipfs]. The music comes from [musicforprogramming.net][mfp], and has been
+carefully chosen to maximize concentration by providing just the right amount of
+interest to occupy the parts of your brain that would otherwise be left free to
+wander and lead to distraction during your work.
 
 ![2021-09-27 02_07_31-Window](https://user-images.githubusercontent.com/2477952/134829029-35ff610a-6317-4483-8441-a59be53d0c43.png)
 
-> This web page was stumbled together by [@jilleJr](https://github.com/jilleJr) in Visual Studio Code. It is a dApp port of the wonderful [musicforprogramming.net][mfp], rewritten in [Svelte][svelte] in the plan of hosting it [IPFS][ipfs].
+> This web page was stumbled together by [@jilleJr](https://github.com/jilleJr)
+> in Visual Studio Code. It is a dApp port of the wonderful
+> [musicforprogramming.net][mfp], rewritten in [Svelte][svelte] in the plan of
+> hosting it [IPFS][ipfs].
 >
-> This site was _originally_ knocked together by [Datassette][datassette] in SublimeText. Episodes are faffed with using iZotope Ozone and Adobe Audition to maintain comparable loudness and frequency presence between episodes.
+> This site was _originally_ knocked together by [Datassette][datassette] in
+> SublimeText. Episodes are faffed with using iZotope Ozone and Adobe Audition
+> to maintain comparable loudness and frequency presence between episodes.
 
 ## View it online: 👉 [`ipns://mfp.jillejr.tech`](ipns://mfp.jillejr.tech) 👈
 
@@ -34,11 +43,12 @@ ipfs://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq    CIDv1
 
 ### Seeding peers
 
-Adding known seeding peers will speed up the dApp as that gives your local IPFS node a known place to download the files from.
+Adding known seeding peers will speed up the dApp as that gives your local IPFS
+node a known place to download the files from.
 
 Peers
 
-```js
+```json
 [
   {
     "Addrs": [
@@ -95,17 +105,27 @@ Edit your IPFS config by adding the above peer:
 }
 ```
 
-This will make sure your local IPFS node does not disconnect from the peer when it's inactive, as finding the peer again takes a lot of time. (Docs: [`Peering.Peers`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peeringpeers))
+This will make sure your local IPFS node does not disconnect from the peer when
+it's inactive, as finding the peer again takes a lot of time.
+(Docs: [`Peering.Peers`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peeringpeers))
 
-If adding multiple peers, make sure to add a comma `,` on all but the last closing object brace `}`.
+If adding multiple peers, make sure to add a comma `,` on all but the last
+closing object brace `}`.
 
 ### Disabling TCP connections on your local node
 
-IPFS will happily connect up to 300-600 other peers, with one TCP connection towards each. Unless you have a super computer and super-duper router, and even super-er-er Internet connection, then this can stress out your PC's OS and even your router.
+IPFS will happily connect up to 300-600 other peers, with one TCP connection
+towards each. Unless you have a super computer and super-duper router, and even
+super-er-er Internet connection, then this can stress out your router and even
+your PC's OS. The limit on parallel TCP sockets is questionably low.
 
 But there's an alternative: QUIC over UDP!
 
-QUIC over UDP is enabled by default, but to make your computer happier you can disable all TCP connections. The drawbacks are that not all peers support the UDP/QUIC IPFS connection type. But when comparing _"somewhat usable with QUIC"_ vs _"locks up my home's internet so I can't even google why it's happening"_, the former takes precedence.
+QUIC over UDP is enabled by default, but to make your computer happier you can
+disable all TCP connections. The drawbacks are that not all peers support the
+UDP/QUIC IPFS connection type. But when comparing _"somewhat usable with QUIC"_
+vs _"locks up my home's internet so I can't even google why it's happening"_,
+the former takes precedence.
 
 Edit your IPFS config by changing the following values:
 
@@ -160,11 +180,17 @@ Edit your IPFS config by changing the following values:
  }
 ```
 
-The first section of removals disables incoming connections to use TCP. (Docs: [`Addresses.Swarm`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#addressesswarm))
+The first section of removals disables incoming connections to use TCP.
+(Docs: [`Addresses.Swarm`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#addressesswarm))
 
-The latter section of changes will disable Websockets (which uses TCP) and pure TCP connections for when your local node connects to other peers. (Docs: [`Swarm.Transports.Network`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmtransportsnetwork))
+The latter section of changes will disable Websockets (which uses TCP) and pure
+TCP connections for when your local node connects to other peers.
+(Docs: [`Swarm.Transports.Network`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#swarmtransportsnetwork))
 
-Make sure to restart your IPFS node for the changes to take effect. For IPFS Desktop, that would be to click the system tray icon of IPFS and then selecting <kbd>Restart</kbd>. For IPFS in Brave, just restart the browser (all windows must be closed).
+Make sure to restart your IPFS node for the changes to take effect. For IPFS
+Desktop, that would be to click the system tray icon of IPFS and then selecting
+<kbd>Restart</kbd>. For IPFS in Brave, just restart the browser
+(all windows must be closed).
 
 ## Why does this repo exist
 
