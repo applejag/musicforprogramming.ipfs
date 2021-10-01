@@ -220,13 +220,27 @@ Desktop, that would be to click the system tray icon of IPFS and then selecting
    $ npm install
    ```
 
-2. Download all music files. It's about 6 GB of .mp3 files, so hosting them in
-   the repo is unfeasible, even with Git LFS.
+### Download audio files
 
-   Easiest way is to install [WebTorrent](https://webtorrent.io/) and download
-   via <https://musicforprogramming.net/MFP_01-52.torrent>. That only provides
-   the songs 01 to 52, so songs 53 to 62 will have to be downloaded manually
-   from the webpage <https://musicforprogramming.net/>.
+Too many files to be hosted in Git, even in Git LFS. They take up ~7GB at the
+moment.
+
+Can be downloaded via IPFS:
+
+```console
+$ ipfs get QmVLtnqifKS25PYYMSTfMe3Nze4fTsynDwMLeV3gUCHa4k -o public/audio
+Saving file(s) to QmVLtnqifKS25PYYMSTfMe3Nze4fTsynDwMLeV3gUCHa4k
+ 5.00 MiB / 7.06 GiB [>----------------------------------------------------------------]   0.07% 38m45s
+```
+
+However that can be quite slow. So a faster alternative is to use BitTorrent
+(ex: via [WebTorrent](https://webtorrent.io/)):
+
+1. Download <https://musicforprogramming.net/MFP_01-52.torrent>.
+   That only provides the songs 01 to 52.
+
+2. Songs 53 to 62 will have to be downloaded manually from the webpage
+   <https://musicforprogramming.net/>.
 
    Place the downloaded songs in `public/audio/*.mp3`.
 
