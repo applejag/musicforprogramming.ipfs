@@ -23,21 +23,21 @@ wander and lead to distraction during your work.
 
 ```
 /ipns/mfp.jillejr.tech                                                DNSLink
-/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                  CIDv0
-/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq     CIDv1
+/ipfs/QmNw2zeMRYXb5ud7oJ49ytSdJS2Nuw4gpKn18VgEAKRSht                  CIDv0
+/ipfs/bafybeiaiz3zalf3aoei54a6vhtlucw7njoeozsp5s7ohcqil5t4fhy3ya4     CIDv1
 
 ipns://mfp.jillejr.tech                                               DNSLink
-ipfs://QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR                 CIDv0
-ipfs://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq    CIDv1
+ipfs://QmNw2zeMRYXb5ud7oJ49ytSdJS2Nuw4gpKn18VgEAKRSht                 CIDv0
+ipfs://bafybeiaiz3zalf3aoei54a6vhtlucw7njoeozsp5s7ohcqil5t4fhy3ya4    CIDv1
 ```
 
 ### HTTP gateways
 
 - IPFS.io via DNSLink: <https://ipfs.io/ipns/mfp.jillejr.tech/>
-- IPFS.io via CIDv0: <https://ipfs.io/ipfs/QmT4iQv7hxwTyCuSeg5ut1tiGJwgiMNp6XpBMYgkKdhFFR/>
-- IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq/>
+- IPFS.io via CIDv0: <https://ipfs.io/ipfs/QmNw2zeMRYXb5ud7oJ49ytSdJS2Nuw4gpKn18VgEAKRSht/>
+- IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeiaiz3zalf3aoei54a6vhtlucw7njoeozsp5s7ohcqil5t4fhy3ya4/>
 - dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
-- dweb.link via CIDv1: <https://bafybeicggvkfe43hpp34vujz5pmchxy2caela47afu7sh6pn3ir4lhc2hq.ipfs.dweb.link/>
+- dweb.link via CIDv1: <https://bafybeiaiz3zalf3aoei54a6vhtlucw7njoeozsp5s7ohcqil5t4fhy3ya4.ipfs.dweb.link/>
 
 ## Speeding up connection
 
