@@ -2,6 +2,7 @@ import type { LinkOrHref } from "./link";
 
 export interface EpisodeRawData {
   readonly id: string;
+  readonly number: number;
   readonly name: string;
   readonly fileName: string;
   readonly compilerLinks: LinkOrHref[];
@@ -20,6 +21,10 @@ export function getEpisodeById(episodeId: string): EpisodeData {
   return episodeMap.get(episodeId);
 }
 
+export function getEpisodeByNumber(episodeNumber: string): EpisodeData {
+  return episodeMapByNumber.get(episodeNumber);
+}
+
 export function getAllEpisodeData(): EpisodeData[] {
   return episodeDatas;
 }
@@ -31,6 +36,7 @@ export function getEpisodeCount(): number {
 const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "one",
+    number: 1,
     name: "01: Datassette",
     fileName: "music_for_programming_1-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
@@ -54,6 +60,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "two",
+    number: 2,
     name: "02: Sunjammer",
     fileName: "music_for_programming_2-sunjammer.ogg",
     compilerLinks: ["http://doomsday.no/"],
@@ -73,6 +80,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "three",
+    number: 3,
     name: "03: Datassette",
     fileName: "music_for_programming_3-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
@@ -102,6 +110,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "four",
+    number: 4,
     name: "04: Com Truise",
     fileName: "music_for_programming_4-com_truise.ogg",
     compilerLinks: ["http://comtruise.com/"],
@@ -127,6 +136,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "five",
+    number: 5,
     name: "05: Abe Mangger",
     fileName: "music_for_programming_5-abe_mangger.ogg",
     compilerLinks: ["http://soundcloud.com/abe_mangger"],
@@ -163,6 +173,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "six",
+    number: 6,
     name: "06: Gods Of The New Age",
     fileName: "music_for_programming_6-gods_of_the_new_age.ogg",
     compilerLinks: ["http://soundcloud.com/gods-of-the-new-age"],
@@ -184,6 +195,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "seven",
+    number: 7,
     name: "07: Tahlhoff Garten + Untitled",
     fileName: "music_for_programming_7-tahlhoff_garten_and_untitled.ogg",
     compilerLinks: [
@@ -219,6 +231,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "eight",
+    number: 8,
     name: "08: Connectedness Locus",
     fileName: "music_for_programming_8-connectedness_locus.ogg",
     compilerLinks: ["http://www.connectednesslocus.com/"],
@@ -240,6 +253,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "ten",
+    number: 10,
     name: "10: Unity Gain Temple",
     fileName: "music_for_programming_10-unity_gain_temple.ogg",
     compilerLinks: ["http://soundcloud.com/antipodeanmongsyndicate/"],
@@ -262,6 +276,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "eleven",
+    number: 11,
     name: "11: Miles Tilmann",
     fileName: "music_for_programming_11-miles_tilmann.ogg",
     compilerLinks: ["http://webhole.com/"],
@@ -281,6 +296,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twelve",
+    number: 12,
     name: "12: Forgotten Light",
     fileName: "music_for_programming_12-forgotten_light.ogg",
     compilerLinks: ["https://www.discogs.com/artist/5253745-Leonce"],
@@ -305,6 +321,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirteen",
+    number: 13,
     name: "13: Matt Whitehead",
     fileName: "music_for_programming_13-matt_whitehead.ogg",
     compilerLinks: ["https://soundcloud.com/matt-whitehead"],
@@ -379,6 +396,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fourteen",
+    number: 14,
     name: "14: Tahlhoff Garten + Untitled",
     fileName: "music_for_programming_14-tahlhoff_garten_and_untitled.ogg",
     compilerLinks: [
@@ -421,6 +439,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fifteen",
+    number: 15,
     name: "15: Dan Adeyemi",
     fileName: "music_for_programming_15-dan_adeyemi.ogg",
     compilerLinks: ["http://danadeyemi.com/"],
@@ -441,6 +460,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "sixteen",
+    number: 16,
     name: "16: Silent Stelios",
     fileName: "music_for_programming_16-silent_stelios.ogg",
     compilerLinks: ["https://soundcloud.com/silent-stelios"],
@@ -462,6 +482,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "seventeen",
+    number: 17,
     name: "17: Graphplan",
     fileName: "music_for_programming_17-graphplan.ogg",
     compilerLinks: ["https://soundcloud.com/graphplan"],
@@ -493,6 +514,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "eighteen",
+    number: 18,
     name: "18: Konx Om Pax",
     fileName: "music_for_programming_18-konx_om_pax.ogg",
     compilerLinks: ["http://displaycopy.net/"],
@@ -512,6 +534,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "nineteen",
+    number: 19,
     name: "19: Hivemind",
     fileName: "music_for_programming_19-hivemind.ogg",
     compilerLinks: [
@@ -539,6 +562,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twenty",
+    number: 20,
     name: "20: Uberdog",
     fileName: "music_for_programming_20-uberdog.ogg",
     compilerLinks: ["https://soundcloud.com/uberdog"],
@@ -569,6 +593,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentyone",
+    number: 21,
     name: "21: Idol Eyes",
     fileName: "music_for_programming_21-idol_eyes.ogg",
     compilerLinks: ["https://idoleyes.bandcamp.com/"],
@@ -597,6 +622,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentytwo",
+    number: 22,
     name: "22: Mindaugaszq",
     fileName: "music_for_programming_22-mindaugaszq.ogg",
     compilerLinks: ["https://www.mixcloud.com/mindaugaszq/"],
@@ -620,6 +646,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentythree",
+    number: 23,
     name: "23: Panda Magic",
     fileName: "music_for_programming_23-panda_magic.ogg",
     compilerLinks: ["https://www.mixcloud.com/pandamagic/"],
@@ -643,6 +670,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentyfour",
+    number: 24,
     name: "24: RITES",
     fileName: "music_for_programming_24-rites.ogg",
     compilerLinks: ["https://soundcloud.com/rriitteess"],
@@ -665,6 +693,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentyfive",
+    number: 25,
     name: "25: _nono_",
     fileName: "music_for_programming_25-_nono_.ogg",
     compilerLinks: ["https://soundcloud.com/nono-16"],
@@ -691,6 +720,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentysix",
+    number: 26,
     name: "26: Abstraction",
     fileName: "music_for_programming_26-abstraction.ogg",
     compilerLinks: ["https://soundcloud.com/abstraction"],
@@ -713,6 +743,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentyseven",
+    number: 27,
     name: "27: Michael Hicks",
     fileName: "music_for_programming_27-michael_hicks.ogg",
     compilerLinks: ["http://michaelarts.net/"],
@@ -729,6 +760,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentyeight",
+    number: 28,
     name: "28: Big War",
     fileName: "music_for_programming_28-big_war.ogg",
     compilerLinks: [
@@ -760,6 +792,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "twentynine",
+    number: 29,
     name: "29: Luke Handsfree",
     fileName: "music_for_programming_29-luke_handsfree.ogg",
     compilerLinks: ["https://twitter.com/lukehandsfree"],
@@ -792,6 +825,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirty",
+    number: 30,
     name: "30: Matt Kruse",
     fileName: "music_for_programming_30-matt_kruse.ogg",
     compilerLinks: ["https://twitter.com/krusenator"],
@@ -817,6 +851,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtyone",
+    number: 31,
     name: "31: Datassette",
     fileName: "music_for_programming_31-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
@@ -841,6 +876,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtytwo",
+    number: 32,
     name: "32: Chris Seddon",
     fileName: "music_for_programming_32-chris_seddon.ogg",
     compilerLinks: ["http://cseddon.co.uk/"],
@@ -866,6 +902,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtythree",
+    number: 33,
     name: "33: uuav",
     fileName: "music_for_programming_33-uuav.ogg",
     compilerLinks: ["https://twitter.com/uuav"],
@@ -891,6 +928,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtyfour",
+    number: 34,
     name: "34: Chukus",
     fileName: "music_for_programming_34-chukus.ogg",
     compilerLinks: ["https://soundcloud.com/chukus"],
@@ -912,6 +950,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtyfive",
+    number: 35,
     name: "35: Nadim Kobeissi",
     fileName: "music_for_programming_35-nadim_kobeissi.ogg",
     compilerLinks: ["https://nadim.computer/"],
@@ -931,6 +970,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtysix",
+    number: 36,
     name: "36: Ea7_dmZ",
     fileName: "music_for_programming_36-ea7_dmz.ogg",
     compilerLinks: ["https://soundcloud.com/ea7_dmz"],
@@ -954,6 +994,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtyseven",
+    number: 37,
     name: "37: Lackluster",
     fileName: "music_for_programming_37-lackluster.ogg",
     compilerLinks: ["https://lackluster.bandcamp.com/"],
@@ -976,6 +1017,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtyeight",
+    number: 38,
     name: "38: J.S. Aurelius",
     fileName: "music_for_programming_38-j_s_aurelius.ogg",
     compilerLinks: ["https://www.discogs.com/artist/3270321-JS-Aurelius"],
@@ -996,6 +1038,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "thirtynine",
+    number: 39,
     name: "39: Kidding Kurrys",
     fileName: "music_for_programming_39-kidding_kurrys.ogg",
     compilerLinks: [
@@ -1030,6 +1073,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "forty",
+    number: 40,
     name: "40: Mark Schneider",
     fileName: "music_for_programming_40-mark_schneider.ogg",
     compilerLinks: ["https://twitter.com/MarkASchneider"],
@@ -1054,6 +1098,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortyone",
+    number: 41,
     name: "41: Sunjammer",
     fileName: "music_for_programming_41-sunjammer.ogg",
     compilerLinks: ["http://doomsday.no/"],
@@ -1072,6 +1117,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortytwo",
+    number: 42,
     name: "42: Datassette",
     fileName: "music_for_programming_42-datassette.ogg",
     compilerLinks: ["https://datassette.bandcamp.com/"],
@@ -1098,6 +1144,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortythree",
+    number: 43,
     name: "43: Hey Exit",
     fileName: "music_for_programming_43-hey_exit.ogg",
     compilerLinks: ["http://www.heyexit.com/"],
@@ -1128,6 +1175,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortyfour",
+    number: 44,
     name: "44: hukka",
     fileName: "music_for_programming_44-hukka.ogg",
     compilerLinks: ["https://soundcloud.com/hukka"],
@@ -1154,6 +1202,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortyfive",
+    number: 45,
     name: "45: Ehohroma",
     fileName: "music_for_programming_45-ehohroma.ogg",
     compilerLinks: ["https://soundcloud.com/ehohroma"],
@@ -1176,6 +1225,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortysix",
+    number: 46,
     name: "46: Jo Johnson",
     fileName: "music_for_programming_46-jo_johnson.ogg",
     compilerLinks: [
@@ -1211,6 +1261,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortyseven",
+    number: 47,
     name: "47: Abe Mangger",
     fileName: "music_for_programming_47-abe_mangger.ogg",
     compilerLinks: ["https://soundcloud.com/abe_mangger"],
@@ -1258,6 +1309,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortyeight",
+    number: 48,
     name: "48: Michael Hicks",
     fileName: "music_for_programming_48-michael_hicks.ogg",
     compilerLinks: [
@@ -1280,6 +1332,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fortynine",
+    number: 49,
     name: "49: Julien Mier",
     fileName: "music_for_programming_49-julien_mier.ogg",
     compilerLinks: [
@@ -1304,6 +1357,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fifty",
+    number: 50,
     name: "50: Misc.",
     fileName: "music_for_programming_50-misc.works.ogg",
     compilerLinks: ["http://misc.works/"],
@@ -1340,6 +1394,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftyone",
+    number: 51,
     name: "51: Mücha",
     fileName: "music_for_programming_51-mücha.ogg",
     compilerLinks: [
@@ -1370,6 +1425,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftytwo",
+    number: 52,
     name: "52: Inchindown",
     fileName: "music_for_programming_52-inchindown.ogg",
     compilerLinks: [
@@ -1410,6 +1466,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftythree",
+    number: 53,
     name: "53: Beb Welten",
     fileName: "music_for_programming_53-beb_welten.ogg",
     compilerLinks: ["https://www.bebwelten.de/"],
@@ -1438,6 +1495,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftyfour",
+    number: 54,
     name: "54: HLER",
     fileName: "music_for_programming_54-hler.ogg",
     compilerLinks: [
@@ -1451,6 +1509,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftyfive",
+    number: 55,
     name: "55: 20 Jazz Funk Greats",
     fileName: "music_for_programming_55-20_jazz_funk_greats.ogg",
     compilerLinks: ["http://20jazzfunkgreats.co.uk/"],
@@ -1471,6 +1530,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftysix",
+    number: 56,
     name: "56: Forest Drive West",
     fileName: "music_for_programming_56-forest_drive_west.ogg",
     compilerLinks: ["https://soundcloud.com/forest-drive-west"],
@@ -1498,6 +1558,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftyseven",
+    number: 57,
     name: "57: Hainbach",
     fileName: "music_for_programming_57-hainbach.ogg",
     compilerLinks: [
@@ -1519,6 +1580,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftyeight",
+    number: 58,
     name: "58: OliSUn",
     fileName: "music_for_programming_58-olive_is_the_sun.ogg",
     compilerLinks: ["https://oliveisthesun.bandcamp.com/"],
@@ -1540,6 +1602,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "fiftynine",
+    number: 59,
     name: "59: Miunau",
     fileName: "music_for_programming_59-miunau.ogg",
     compilerLinks: [
@@ -1571,6 +1634,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "sixty",
+    number: 60,
     name: "60: TUNDRA",
     fileName: "music_for_programming_60-tundra.ogg",
     compilerLinks: [
@@ -1607,6 +1671,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "sixtyone",
+    number: 61,
     name: "61: Linnley",
     fileName: "music_for_programming_61-linnley.ogg",
     compilerLinks: ["https://soundcloud.com/linnley-music"],
@@ -1631,6 +1696,7 @@ const episodeRawDatas: EpisodeRawData[] = [
 
   {
     id: "sixtytwo",
+    number: 62,
     name: "62: Our Grey Lives",
     fileName: "music_for_programming_62-our_grey_lives.ogg",
     compilerLinks: ["https://misc-works.bandcamp.com/album/cacophonies"],
@@ -1652,4 +1718,8 @@ const episodeDatas: EpisodeData[] = episodeRawDatas.map((o) => ({
 
 const episodeMap = new Map<string, EpisodeData>(
   episodeDatas.map((o) => [o.id, o])
+);
+
+const episodeMapByNumber = new Map<string, EpisodeData>(
+  episodeDatas.map((o) => [`${o.number}`, o])
 );

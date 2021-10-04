@@ -1,12 +1,13 @@
 <script lang="ts">
   import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
-  import { getEpisodeById, getLatestEpisode } from "./libs/episodes-repo";
+  import { getEpisodeById, getEpisodeByNumber, getLatestEpisode } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
   import CreditsSection from "./sections/CreditsSection.svelte";
   import { addWindowEventListener } from "./libs/util";
+  import queryString from "query-string";
 
   enum CurrentPage {
     About,
@@ -31,9 +32,17 @@
     }
   }
 
+  function getEpisodeNumberFromQueryParams(): string {
+    const episodeNumber = queryString.parse(location.search).episode;
+    return Array.isArray(episodeNumber) ? episodeNumber[0] : episodeNumber;
+  }
+
   function getEpisodeFromSearchKeys(keys: string[]) {
     const episodeId = keys.find(getEpisodeById);
-    return getEpisodeById(episodeId) ?? getLatestEpisode();
+    const episodeNumber = getEpisodeNumberFromQueryParams();
+    return getEpisodeByNumber(episodeNumber) ??
+          getEpisodeById(episodeId) ??
+          getLatestEpisode();
   }
 
   function onstatechanged() {
