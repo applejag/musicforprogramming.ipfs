@@ -32,7 +32,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "one",
     name: "01: Datassette",
-    fileName: "music_for_programming_1-datassette.mp3",
+    fileName: "music_for_programming_1-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
     notes: `\
       Frog Pocket - Plinty
@@ -55,7 +55,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "two",
     name: "02: Sunjammer",
-    fileName: "music_for_programming_2-sunjammer.mp3",
+    fileName: "music_for_programming_2-sunjammer.ogg",
     compilerLinks: ["http://doomsday.no/"],
     notes: `\
       Bruno Sanfilippo - Piano Textures II, II
@@ -74,7 +74,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "three",
     name: "03: Datassette",
-    fileName: "music_for_programming_3-datassette.mp3",
+    fileName: "music_for_programming_3-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
     notes: `\
       LFO - Goodnight Vienna
@@ -103,7 +103,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "four",
     name: "04: Com Truise",
-    fileName: "music_for_programming_4-com_truise.mp3",
+    fileName: "music_for_programming_4-com_truise.ogg",
     compilerLinks: ["http://comtruise.com/"],
     notes: `\
       Joel Vandroogenbroeck - Banjomatic
@@ -128,7 +128,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "five",
     name: "05: Abe Mangger",
-    fileName: "music_for_programming_5-abe_mangger.mp3",
+    fileName: "music_for_programming_5-abe_mangger.ogg",
     compilerLinks: ["http://soundcloud.com/abe_mangger"],
     notes: `\
       Brad Meldhau - Fuck You
@@ -164,7 +164,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "six",
     name: "06: Gods Of The New Age",
-    fileName: "music_for_programming_6-gods_of_the_new_age.mp3",
+    fileName: "music_for_programming_6-gods_of_the_new_age.ogg",
     compilerLinks: ["http://soundcloud.com/gods-of-the-new-age"],
     notes: `\
       Robert Rich - Folded Space
@@ -185,7 +185,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "seven",
     name: "07: Tahlhoff Garten + Untitled",
-    fileName: "music_for_programming_7-tahlhoff_garten_and_untitled.mp3",
+    fileName: "music_for_programming_7-tahlhoff_garten_and_untitled.ogg",
     compilerLinks: [
       "http://soundcloud.com/jimgorn",
       "http://soundcloud.com/tahlhoff-garten",
@@ -220,7 +220,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "eight",
     name: "08: Connectedness Locus",
-    fileName: "music_for_programming_8-connectedness_locus.mp3",
+    fileName: "music_for_programming_8-connectedness_locus.ogg",
     compilerLinks: ["http://www.connectednesslocus.com/"],
     notes: `\
       Sanchez is driven by demons - wash the spiders away (remnant)
@@ -241,7 +241,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "ten",
     name: "10: Unity Gain Temple",
-    fileName: "music_for_programming_10-unity_gain_temple.mp3",
+    fileName: "music_for_programming_10-unity_gain_temple.ogg",
     compilerLinks: ["http://soundcloud.com/antipodeanmongsyndicate/"],
     notes: `\
       Mort Garson - Witch Trial
@@ -263,7 +263,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "eleven",
     name: "11: Miles Tilmann",
-    fileName: "music_for_programming_11-miles_tilmann.mp3",
+    fileName: "music_for_programming_11-miles_tilmann.ogg",
     compilerLinks: ["http://webhole.com/"],
     notes: `\
       All tracks by Miles Tilmann:
@@ -282,7 +282,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twelve",
     name: "12: Forgotten Light",
-    fileName: "music_for_programming_12-forgotten_light.mp3",
+    fileName: "music_for_programming_12-forgotten_light.ogg",
     compilerLinks: ["https://www.discogs.com/artist/5253745-Leonce"],
     notes: `\
       Untitled - Untitled
@@ -306,7 +306,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirteen",
     name: "13: Matt Whitehead",
-    fileName: "music_for_programming_13-matt_whitehead.mp3",
+    fileName: "music_for_programming_13-matt_whitehead.ogg",
     compilerLinks: ["https://soundcloud.com/matt-whitehead"],
     notes: `\
       White Noise 2 - Concerto For Synthesizer Movement I
@@ -380,7 +380,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fourteen",
     name: "14: Tahlhoff Garten + Untitled",
-    fileName: "music_for_programming_14-tahlhoff_garten_and_untitled.mp3",
+    fileName: "music_for_programming_14-tahlhoff_garten_and_untitled.ogg",
     compilerLinks: [
       "http://soundcloud.com/jimgorn",
       "http://soundcloud.com/tahlhoff-garten",
@@ -422,7 +422,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fifteen",
     name: "15: Dan Adeyemi",
-    fileName: "music_for_programming_15-dan_adeyemi.mp3",
+    fileName: "music_for_programming_15-dan_adeyemi.ogg",
     compilerLinks: ["http://danadeyemi.com/"],
     notes: `\
       Yee-King - Sleepy Clown
@@ -442,7 +442,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "sixteen",
     name: "16: Silent Stelios",
-    fileName: "music_for_programming_16-silent_stelios.mp3",
+    fileName: "music_for_programming_16-silent_stelios.ogg",
     compilerLinks: ["https://soundcloud.com/silent-stelios"],
     notes: `\
       Alvin Lucier - I Am Sitting In A Room
@@ -463,7 +463,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "seventeen",
     name: "17: Graphplan",
-    fileName: "music_for_programming_17-graphplan.mp3",
+    fileName: "music_for_programming_17-graphplan.ogg",
     compilerLinks: ["https://soundcloud.com/graphplan"],
     notes: `\
       Sunn O))) - Sin Nanna (Southern Lord)
@@ -494,7 +494,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "eighteen",
     name: "18: Konx Om Pax",
-    fileName: "music_for_programming_18-konx_om_pax.mp3",
+    fileName: "music_for_programming_18-konx_om_pax.ogg",
     compilerLinks: ["http://displaycopy.net/"],
     notes: `\
       Cylob - Majorette
@@ -513,7 +513,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "nineteen",
     name: "19: Hivemind",
-    fileName: "music_for_programming_19-hivemind.mp3",
+    fileName: "music_for_programming_19-hivemind.ogg",
     compilerLinks: [
       {
         href: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -540,7 +540,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twenty",
     name: "20: Uberdog",
-    fileName: "music_for_programming_20-uberdog.mp3",
+    fileName: "music_for_programming_20-uberdog.ogg",
     compilerLinks: ["https://soundcloud.com/uberdog"],
     notes: `\
       Danny Norbury - I turn off the last light and close the door
@@ -570,7 +570,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentyone",
     name: "21: Idol Eyes",
-    fileName: "music_for_programming_21-idol_eyes.mp3",
+    fileName: "music_for_programming_21-idol_eyes.ogg",
     compilerLinks: ["https://idoleyes.bandcamp.com/"],
     notes: `\
       David Sylvan & Holger Czukay - Premonition (Giant Empty Iron Vessel)
@@ -598,7 +598,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentytwo",
     name: "22: Mindaugaszq",
-    fileName: "music_for_programming_22-mindaugaszq.mp3",
+    fileName: "music_for_programming_22-mindaugaszq.ogg",
     compilerLinks: ["https://www.mixcloud.com/mindaugaszq/"],
     notes: `\
       Carl Craig & Moritz Von Oswald - Intro
@@ -621,7 +621,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentythree",
     name: "23: Panda Magic",
-    fileName: "music_for_programming_23-panda_magic.mp3",
+    fileName: "music_for_programming_23-panda_magic.ogg",
     compilerLinks: ["https://www.mixcloud.com/pandamagic/"],
     notes: `\
       Stuart Dempster - Cloud Landings
@@ -644,7 +644,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentyfour",
     name: "24: RITES",
-    fileName: "music_for_programming_24-rites.mp3",
+    fileName: "music_for_programming_24-rites.ogg",
     compilerLinks: ["https://soundcloud.com/rriitteess"],
     notes: `\
       Donnacha Costello - Cocoa B
@@ -666,7 +666,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentyfive",
     name: "25: _nono_",
-    fileName: "music_for_programming_25-_nono_.mp3",
+    fileName: "music_for_programming_25-_nono_.ogg",
     compilerLinks: ["https://soundcloud.com/nono-16"],
     notes: `\
       Belle Belle - End The Wind
@@ -692,7 +692,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentysix",
     name: "26: Abstraction",
-    fileName: "music_for_programming_26-abstraction.mp3",
+    fileName: "music_for_programming_26-abstraction.ogg",
     compilerLinks: ["https://soundcloud.com/abstraction"],
     notes: `\
       Sweetheart of Kairi - An Intro...
@@ -714,7 +714,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentyseven",
     name: "27: Michael Hicks",
-    fileName: "music_for_programming_27-michael_hicks.mp3",
+    fileName: "music_for_programming_27-michael_hicks.ogg",
     compilerLinks: ["http://michaelarts.net/"],
     notes: `\
       Machinefabriek - Apollo
@@ -730,7 +730,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentyeight",
     name: "28: Big War",
-    fileName: "music_for_programming_28-big_war.mp3",
+    fileName: "music_for_programming_28-big_war.ogg",
     compilerLinks: [
       "https://soundcloud.com/bigwar",
       "http://www.genericgreeting.co.uk/",
@@ -761,7 +761,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "twentynine",
     name: "29: Luke Handsfree",
-    fileName: "music_for_programming_29-luke_handsfree.mp3",
+    fileName: "music_for_programming_29-luke_handsfree.ogg",
     compilerLinks: ["https://twitter.com/lukehandsfree"],
     notes: `\
       Jacob 2-2 & Pogflipper - Roof Top Paint Drops (excerpt)
@@ -793,7 +793,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirty",
     name: "30: Matt Kruse",
-    fileName: "music_for_programming_30-matt_kruse.mp3",
+    fileName: "music_for_programming_30-matt_kruse.ogg",
     compilerLinks: ["https://twitter.com/krusenator"],
     notes: `\
       Odd Nosdam - 20th
@@ -818,7 +818,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtyone",
     name: "31: Datassette",
-    fileName: "music_for_programming_31-datassette.mp3",
+    fileName: "music_for_programming_31-datassette.ogg",
     compilerLinks: ["http://datassette.net/"],
     notes: `\
       Eugen Thomass - Dancing Fishes
@@ -842,7 +842,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtytwo",
     name: "32: Chris Seddon",
-    fileName: "music_for_programming_32-chris_seddon.mp3",
+    fileName: "music_for_programming_32-chris_seddon.ogg",
     compilerLinks: ["http://cseddon.co.uk/"],
     notes: `\
       Pulse Emitter - Purple
@@ -867,7 +867,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtythree",
     name: "33: uuav",
-    fileName: "music_for_programming_33-uuav.mp3",
+    fileName: "music_for_programming_33-uuav.ogg",
     compilerLinks: ["https://twitter.com/uuav"],
     notes: `\
       uuav - Onotram (Varroa Ex Soundtrack)
@@ -892,7 +892,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtyfour",
     name: "34: Chukus",
-    fileName: "music_for_programming_34-chukus.mp3",
+    fileName: "music_for_programming_34-chukus.ogg",
     compilerLinks: ["https://soundcloud.com/chukus"],
     notes: `\
       Ricardo Donoso - Overture
@@ -913,7 +913,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtyfive",
     name: "35: Nadim Kobeissi",
-    fileName: "music_for_programming_35-nadim_kobeissi.mp3",
+    fileName: "music_for_programming_35-nadim_kobeissi.ogg",
     compilerLinks: ["https://nadim.computer/"],
     notes: `\
       VHS Head - Movies That Never Were
@@ -932,7 +932,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtysix",
     name: "36: Ea7_dmZ",
-    fileName: "music_for_programming_36-ea7_dmz.mp3",
+    fileName: "music_for_programming_36-ea7_dmz.ogg",
     compilerLinks: ["https://soundcloud.com/ea7_dmz"],
     notes: `\
       Thomas Köner - Une topographie Sonore
@@ -955,7 +955,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtyseven",
     name: "37: Lackluster",
-    fileName: "music_for_programming_37-lackluster.mp3",
+    fileName: "music_for_programming_37-lackluster.ogg",
     compilerLinks: ["https://lackluster.bandcamp.com/"],
     notes: `\
       Aphex Twin - Red Calx [SLO] (Soundcloud Dump) (-12 repitch)
@@ -977,7 +977,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtyeight",
     name: "38: J.S. Aurelius",
-    fileName: "music_for_programming_38-j_s_aurelius.mp3",
+    fileName: "music_for_programming_38-j_s_aurelius.ogg",
     compilerLinks: ["https://www.discogs.com/artist/3270321-JS-Aurelius"],
     notes: `\
       Software - Self-Similarity-Life
@@ -997,7 +997,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "thirtynine",
     name: "39: Kidding Kurrys",
-    fileName: "music_for_programming_39-kidding_kurrys.mp3",
+    fileName: "music_for_programming_39-kidding_kurrys.ogg",
     compilerLinks: [
       "https://soundcloud.com/kiddingkurrys",
       "https://soundcloud.com/slowisthenewfast",
@@ -1031,7 +1031,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "forty",
     name: "40: Mark Schneider",
-    fileName: "music_for_programming_40-mark_schneider.mp3",
+    fileName: "music_for_programming_40-mark_schneider.ogg",
     compilerLinks: ["https://twitter.com/MarkASchneider"],
     notes: `\
       Michael Small - Klute Main Title
@@ -1055,7 +1055,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortyone",
     name: "41: Sunjammer",
-    fileName: "music_for_programming_41-sunjammer.mp3",
+    fileName: "music_for_programming_41-sunjammer.ogg",
     compilerLinks: ["http://doomsday.no/"],
     notes: `\
       Hotel Neon - A Lament
@@ -1073,7 +1073,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortytwo",
     name: "42: Datassette",
-    fileName: "music_for_programming_42-datassette.mp3",
+    fileName: "music_for_programming_42-datassette.ogg",
     compilerLinks: ["https://datassette.bandcamp.com/"],
     notes: `\
       Steve Everitt - Twa Brigs (edit)
@@ -1099,7 +1099,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortythree",
     name: "43: Hey Exit",
-    fileName: "music_for_programming_43-hey_exit.mp3",
+    fileName: "music_for_programming_43-hey_exit.ogg",
     compilerLinks: ["http://www.heyexit.com/"],
     notes: `\
       Ensemble De Organographia - Salpinx call / The Sappho Painter (5th c. BC)
@@ -1129,7 +1129,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortyfour",
     name: "44: hukka",
-    fileName: "music_for_programming_44-hukka.mp3",
+    fileName: "music_for_programming_44-hukka.ogg",
     compilerLinks: ["https://soundcloud.com/hukka"],
     notes: `\
       hukka - Resolutions
@@ -1155,7 +1155,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortyfive",
     name: "45: Ehohroma",
-    fileName: "music_for_programming_45-ehohroma.mp3",
+    fileName: "music_for_programming_45-ehohroma.ogg",
     compilerLinks: ["https://soundcloud.com/ehohroma"],
     notes: `\
       Cremation Lily - Presence of Light
@@ -1177,7 +1177,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortysix",
     name: "46: Jo Johnson",
-    fileName: "music_for_programming_46-jo_johnson.mp3",
+    fileName: "music_for_programming_46-jo_johnson.ogg",
     compilerLinks: [
       "https://jojohnson.bandcamp.com/",
       "https://soundcloud.com/werkhouse",
@@ -1212,7 +1212,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortyseven",
     name: "47: Abe Mangger",
-    fileName: "music_for_programming_47-abe_mangger.mp3",
+    fileName: "music_for_programming_47-abe_mangger.ogg",
     compilerLinks: ["https://soundcloud.com/abe_mangger"],
     notes: `\
       The Gordon Highlanders - Amazing Grace (Screwed)
@@ -1259,7 +1259,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortyeight",
     name: "48: Michael Hicks",
-    fileName: "music_for_programming_48-michael_hicks.mp3",
+    fileName: "music_for_programming_48-michael_hicks.ogg",
     compilerLinks: [
       "https://michaelarts.bandcamp.com/",
       "http://www.michaelarts.net/",
@@ -1281,7 +1281,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fortynine",
     name: "49: Julien Mier",
-    fileName: "music_for_programming_49-julien_mier.mp3",
+    fileName: "music_for_programming_49-julien_mier.ogg",
     compilerLinks: [
       "https://julienmier.bandcamp.com/",
       "https://twitter.com/julienmier",
@@ -1305,7 +1305,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fifty",
     name: "50: Misc.",
-    fileName: "music_for_programming_50-misc.works.mp3",
+    fileName: "music_for_programming_50-misc.works.ogg",
     compilerLinks: ["http://misc.works/"],
     notes: `\
       Leyland Kirby - Tinseltown
@@ -1341,7 +1341,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftyone",
     name: "51: Mücha",
-    fileName: "music_for_programming_51-mücha.mp3",
+    fileName: "music_for_programming_51-mücha.ogg",
     compilerLinks: [
       "https://misc-works.bandcamp.com/album/misc-works",
       "https://moocha1.bandcamp.com/music",
@@ -1371,7 +1371,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftytwo",
     name: "52: Inchindown",
-    fileName: "music_for_programming_52-inchindown.mp3",
+    fileName: "music_for_programming_52-inchindown.ogg",
     compilerLinks: [
       "https://blankeditions.bandcamp.com/album/inchindown",
       "https://moonzero.bandcamp.com/",
@@ -1411,7 +1411,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftythree",
     name: "53: Beb Welten",
-    fileName: "music_for_programming_53-beb_welten.mp3",
+    fileName: "music_for_programming_53-beb_welten.ogg",
     compilerLinks: ["https://www.bebwelten.de/"],
     notes: `\
       T Raumschmiere - Do Not Open The Hatch In A Diving Submarine
@@ -1439,7 +1439,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftyfour",
     name: "54: HLER",
-    fileName: "music_for_programming_54-hler.mp3",
+    fileName: "music_for_programming_54-hler.ogg",
     compilerLinks: [
       "https://hler.bandcamp.com",
       "https://www.instagram.com/hlerdrone/",
@@ -1452,7 +1452,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftyfive",
     name: "55: 20 Jazz Funk Greats",
-    fileName: "music_for_programming_55-20_jazz_funk_greats.mp3",
+    fileName: "music_for_programming_55-20_jazz_funk_greats.ogg",
     compilerLinks: ["http://20jazzfunkgreats.co.uk/"],
     notes: `\
       H Takahashi - =...
@@ -1472,7 +1472,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftysix",
     name: "56: Forest Drive West",
-    fileName: "music_for_programming_56-forest_drive_west.mp3",
+    fileName: "music_for_programming_56-forest_drive_west.ogg",
     compilerLinks: ["https://soundcloud.com/forest-drive-west"],
     notes: `\
       Forest Drive West - Untitled
@@ -1499,7 +1499,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftyseven",
     name: "57: Hainbach",
-    fileName: "music_for_programming_57-hainbach.mp3",
+    fileName: "music_for_programming_57-hainbach.ogg",
     compilerLinks: [
       "https://www.hainbachmusik.com/",
       "https://misc-works.bandcamp.com/album/impulsgenerator",
@@ -1520,7 +1520,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftyeight",
     name: "58: OliSUn",
-    fileName: "music_for_programming_58-olive_is_the_sun.mp3",
+    fileName: "music_for_programming_58-olive_is_the_sun.ogg",
     compilerLinks: ["https://oliveisthesun.bandcamp.com/"],
     notes: `\
       The Glove - A Blues In Drag
@@ -1541,7 +1541,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "fiftynine",
     name: "59: Miunau",
-    fileName: "music_for_programming_59-miunau.mp3",
+    fileName: "music_for_programming_59-miunau.ogg",
     compilerLinks: [
       "https://miunau.com/",
       "https://soundcloud.com/miunau",
@@ -1572,7 +1572,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "sixty",
     name: "60: TUNDRA",
-    fileName: "music_for_programming_60-tundra.mp3",
+    fileName: "music_for_programming_60-tundra.ogg",
     compilerLinks: [
       "http://wearetundra.org/",
       "https://www.instagram.com/wearetundra/",
@@ -1608,7 +1608,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "sixtyone",
     name: "61: Linnley",
-    fileName: "music_for_programming_61-linnley.mp3",
+    fileName: "music_for_programming_61-linnley.ogg",
     compilerLinks: ["https://soundcloud.com/linnley-music"],
     notes: `\
       Tomoko Sauvage - Clepsydra
@@ -1632,7 +1632,7 @@ const episodeRawDatas: EpisodeRawData[] = [
   {
     id: "sixtytwo",
     name: "62: Our Grey Lives",
-    fileName: "music_for_programming_62-our_grey_lives.mp3",
+    fileName: "music_for_programming_62-our_grey_lives.ogg",
     compilerLinks: ["https://misc-works.bandcamp.com/album/cacophonies"],
     notes: `\
       10th Anniversary Special
