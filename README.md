@@ -298,12 +298,14 @@ Visit <http://localhost:5000/>.
 
 ## License
 
-This repo has not yet been assigned an open source license, as I need to clear
-up with the original author if this repo is even allowed.
+The code in this repository (found in all `.js`, `.json`, `.ts`, `.svelte`,
+`.css`, `.scss`, `.html` files) are licensed under GNU GPL 3.0. Full license
+text can be found in [LICENSE](./LICENSE).
 
-To be clear: I, jilleJr, am not the author of musicforprogramming.net.
+To be clear: I, jilleJr, am not the author of musicforprogramming.net. I merely
+own this repository which contains a port of musicforprogramming.net.
 
-Most of the content in this repository are the result of
+Most of the content in this repository are heavily inspired by
 [Datassette's][datassette] hard work. All love goes to Datassette and the
 contributors to [musicforprogramming.net][mfp] for making such a wonderful site
 that I've had so many hours of great use from. ❤
