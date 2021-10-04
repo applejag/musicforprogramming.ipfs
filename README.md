@@ -39,6 +39,33 @@ ipfs://bafybeibtlyfxpmp2h6l6dhwvs2573dwrgsspf42o6t5vhnlm4te7ijit4m    CIDv1
 - dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
 - dweb.link via CIDv1: <https://bafybeibtlyfxpmp2h6l6dhwvs2573dwrgsspf42o6t5vhnlm4te7ijit4m.ipfs.dweb.link/>
 
+## Limitations
+
+1. Requires IPFS. Adding `js-ipfs` is on the roadmap
+   ([#3](https://github.com/jilleJr/musicforprogramming.ipfs/issues/3))
+   and hosting it as an alternative via plain HTTP, but for now you can only
+   access the site via IPFS.
+
+2. Uses Ogg Vorbis as audio codec. This is mostly supported today, with some
+   exceptions:
+
+   > - Internet Explorer (what a shocker)
+   > - Safari (allegedly works with OS X v11.3 or higher though)
+   >
+   > Source: <https://caniuse.com/ogg-vorbis>
+
+   This site uses Ogg Vorbis because it trimmed down the size of the audio from
+   7 GB to 3 GB. I'm not including the `.mp3` files to reduce the bloat from
+   the IPFS object, but if you really want back `.mp3` then please tell me in
+   [a new issue](https://github.com/jilleJr/musicforprogramming.ipfs/issues/new).
+
+3. Slow. Not many users as of yet, and so the centralized [musicforprogramming.net][mfp]
+   is way faster. Though this will hopefully get resolved the more users we get
+   to allow more peers.
+
+   In the meantime, you can increase the throughput by following the
+   "Speeding up connection" guide below.
+
 ## Speeding up connection
 
 ### Seeding peers
@@ -228,13 +255,15 @@ moment.
 Can be downloaded via IPFS:
 
 ```console
-$ ipfs get QmVLtnqifKS25PYYMSTfMe3Nze4fTsynDwMLeV3gUCHa4k -o public/audio
-Saving file(s) to QmVLtnqifKS25PYYMSTfMe3Nze4fTsynDwMLeV3gUCHa4k
- 5.00 MiB / 7.06 GiB [>----------------------------------------------------------------]   0.07% 38m45s
+$ ipfs get QmNiXZvueoyofKZoVEfs2kxWnVEe83Mc5UtyjV69B8ZB8q -o public/audio
+Saving file(s) to public/audio
+ 5.00 MiB / 2.91 GiB [>---------------------------------------------------]   0.07% 38m45s
 ```
 
-However that can be quite slow. So a faster alternative is to use BitTorrent
-(ex: via [WebTorrent](https://webtorrent.io/)):
+If the download is unbaringly slow, then you may be able to speed up the process
+by regenerating the `.ogg` audio files by downloading the majority of the `.mp3`
+songs via BitTorrent (ex: via [WebTorrent](https://webtorrent.io/)) and then
+converting them by hand using `ffmpeg`:
 
 1. Download <https://musicforprogramming.net/MFP_01-52.torrent>.
    That only provides the songs 01 to 52.
@@ -242,7 +271,20 @@ However that can be quite slow. So a faster alternative is to use BitTorrent
 2. Songs 53 to 62 will have to be downloaded manually from the webpage
    <https://musicforprogramming.net/>.
 
-   Place the downloaded songs in `public/audio/*.mp3`.
+3. Convert all files from `.mp3` to `.ogg` using ffmpeg:
+
+   ```console
+   $ for f in *.mp3; do echo "$f"; ffmpeg -i "$f" "${f/.mp3}.ogg" -hide_banner -loglevel error -stats; done
+   music_for_programming_10-unity_gain_temple.mp3
+   size=    1327kB time=00:01:48.00 bitrate= 100.6kbits/s speed=44.2x
+   music_for_programming_11-miles_tilmann.mp3
+   size=     393kB time=00:00:29.07 bitrate= 110.8kbits/s speed=30.4x
+   music_for_programming_12-forgotten_light.mp3
+   size=     175kB time=00:00:13.10 bitrate= 109.3kbits/s speed=29.5x
+   ...
+   ```
+
+4. Place the converted songs in `public/audio/*.mp3`.
 
 ### Serve local files
 
