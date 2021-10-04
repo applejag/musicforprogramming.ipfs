@@ -13,7 +13,7 @@
         {#if epi.id === currentEpisodeId}
           <span class="selected">{epi.name}</span>
         {:else}
-          <Link href="?{epi.id}">{epi.name}</Link>
+          <Link href="?episode={epi.number}">{epi.name}</Link>
         {/if}
       </li>
     {/each}

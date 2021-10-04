@@ -1,7 +1,7 @@
 <script lang="ts">
   import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
-  import { getEpisodeById, getLatestEpisode } from "./libs/episodes-repo";
+  import { getEpisodeById, getEpisodeByNumber, getLatestEpisode } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
@@ -33,7 +33,10 @@
 
   function getEpisodeFromSearchKeys(keys: string[]) {
     const episodeId = keys.find(getEpisodeById);
-    return getEpisodeById(episodeId) ?? getLatestEpisode();
+    const episodeNumber = searchParams.get("episode");
+    return getEpisodeByNumber(episodeNumber) ??
+          getEpisodeById(episodeId) ??
+          getLatestEpisode();
   }
 
   function onstatechanged() {
