@@ -17,6 +17,9 @@
         {/if}
       </li>
     {/each}
+    <li>
+      <a href="?randomEpisode">Random episode</a>
+    </li>
   </ol>
 </Section>
 

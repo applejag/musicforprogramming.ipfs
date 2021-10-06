@@ -1,7 +1,7 @@
 <script lang="ts">
   import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
-  import { getEpisodeById, getEpisodeByNumber, getLatestEpisode } from "./libs/episodes-repo";
+  import { getEpisodeById, getEpisodeByNumber, getLatestEpisode, getRandomEpisode } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
@@ -32,6 +32,7 @@
   }
 
   function getEpisodeFromSearchKeys(keys: string[]) {
+    if (searchParams.has("randomEpisode")) return getRandomEpisode();
     const episodeId = keys.find(getEpisodeById);
     const episodeNumber = searchParams.get("episode");
     return getEpisodeByNumber(episodeNumber) ??

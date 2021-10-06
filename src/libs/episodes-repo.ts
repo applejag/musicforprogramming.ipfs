@@ -25,6 +25,10 @@ export function getEpisodeByNumber(episodeNumber: string): EpisodeData {
   return episodeMapByNumber.get(episodeNumber);
 }
 
+export function getRandomEpisode(): EpisodeData {
+  return episodeMapByNumber.get(`${Math.floor(Math.random() * (episodeMapByNumber.size)) + 1}`);
+}
+
 export function getAllEpisodeData(): EpisodeData[] {
   return episodeDatas;
 }
