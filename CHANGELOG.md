@@ -20,6 +20,8 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 - Added `LICENSE` to IPFS directory & license notice to `build/bundle.js`. (#11)
 
+- Fixed compiler links in episode info not updating when switching episode. (#19)
+
 ## v1.1.0 (2021-10-04)
 
 - Changed from `.mp3` files to `.ogg` files, reducing the size down to almost
