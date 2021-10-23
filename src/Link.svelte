@@ -11,7 +11,7 @@
   $: actualLabel = linkLabel(href) ?? actualHref;
   $: actualTarget =
     target ??
-    (!actualHref || actualHref.startsWith("?") ? undefined : "about:blank");
+    (!actualHref || actualHref.startsWith("?") ? undefined : "_blank");
 
   let search = window.location.search;
   $: isCurrent =
@@ -37,7 +37,11 @@
 {#if isCurrent}
   <span class="selected"><slot>{actualLabel}</slot></span>
 {:else}
-  <a href={actualHref} target={actualTarget} {download} on:click={onclick}
-    ><slot>{actualLabel}</slot></a
+  <a
+    href={actualHref}
+    target={actualTarget}
+    {download}
+    referrerpolicy="no-referrer"
+    on:click={onclick}><slot>{actualLabel}</slot></a
   >
 {/if}
