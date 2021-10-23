@@ -14,15 +14,19 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 ## v1.2.0 (WIP)
 
-- Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
-  Old URLs are still supported, although not used in episode link list.
-  (#10, thanks @DvdQzd!)
-
 - Added `LICENSE` to IPFS directory & license notice to `build/bundle.js`. (#11)
 
 - Added session metadata so native music players will show the artist and album
   names as well as the album cover instead of just
   `musicForProgramming("01: Datassette")`. (#16)
+
+- Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
+  Old URLs are still supported, although not used in episode link list.
+  (#10, thanks @DvdQzd!)
+
+- Changed to react on native pause/play events when updating web UI and when
+  playing beep sound. This means if you press pause button on your bluetooth
+  headphones it now updates the audio player in the browser accordingly. (#21)
 
 - Fixed links to open in new tab via `target="_blank"` instead of the invalid
   value `target="about:blank"`. (#17)
