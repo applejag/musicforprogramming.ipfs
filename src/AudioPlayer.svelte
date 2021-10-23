@@ -64,15 +64,10 @@
   }
 
   function play() {
-    beep();
-    state = PlayState.Playing;
     audio.play();
-    updateTimeString();
   }
 
   function pause() {
-    beep();
-    state = PlayState.Paused;
     audio.pause();
   }
 
@@ -120,6 +115,21 @@
         break;
     }
   }
+
+  function onplay() {
+    beep();
+    state = PlayState.Playing;
+    updateTimeString();
+  }
+
+  function onpause() {
+    beep();
+    state = PlayState.Paused;
+  }
+
+  function onended() {
+    stop();
+  }
 </script>
 
 <svelte:window on:keydown={onkeydown} />
@@ -157,7 +167,9 @@
       bind:this={audio}
       on:timeupdate={updateTimeString}
       on:loadedmetadata={onloadedmetadata}
-      on:ended={stop}
+      on:ended={onended}
+      on:play={onplay}
+      on:pause={onpause}
     />
   {/await}
 </div>
