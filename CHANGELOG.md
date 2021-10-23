@@ -24,6 +24,9 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
   names as well as the album cover instead of just
   `musicForProgramming("01: Datassette")`. (#16)
 
+- Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
+  link in a new tab. (#20)
+
 ## v1.1.0 (2021-10-04)
 
 - Changed from `.mp3` files to `.ogg` files, reducing the size down to almost
