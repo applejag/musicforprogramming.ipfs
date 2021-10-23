@@ -27,6 +27,8 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 - Fixed links to open in new tab via `target="_blank"` instead of the invalid
   value `target="about:blank"`. (#17)
 
+- Fixed compiler links in episode info not updating when switching episode. (#19)
+
 - Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
   link in a new tab. (#20)
 
