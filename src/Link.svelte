@@ -18,7 +18,7 @@
     actualHref && actualHref.startsWith("?") && search === actualHref;
 
   function onclick(e: MouseEvent) {
-    if (actualHref.startsWith("?") && window.history?.pushState) {
+    if (!e.ctrlKey && actualHref.startsWith("?") && window.history?.pushState) {
       e.preventDefault();
       window.history.pushState(null, actualHref, actualHref);
       window.dispatchEvent(new PopStateEvent("onpushstate", { state: null }));
