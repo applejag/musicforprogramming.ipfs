@@ -24,6 +24,9 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
   names as well as the album cover instead of just
   `musicForProgramming("01: Datassette")`. (#16)
 
+- Fixed links to open in new tab via `target="_blank"` instead of the invalid
+  value `target="about:blank"`. (#17)
+
 - Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
   link in a new tab. (#20)
 

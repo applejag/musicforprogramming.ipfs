@@ -5,7 +5,7 @@
 
   export let link: LinkOrHref = null;
   export let href: string = linkHref(link);
-  export let target: string = href.startsWith("?") ? undefined : "about:blank";
+  export let target: string = href.startsWith("?") ? undefined : "_blank";
   export let download: boolean | undefined = undefined;
 
   $: label = linkLabel(link) ?? href;
@@ -33,5 +33,7 @@
 {#if isCurrent}
   <span class="selected"><slot>{label}</slot></span>
 {:else}
-  <a {href} {target} {download} on:click={onclick}><slot>{label}</slot></a>
+  <a {href} {target} {download} on:click={onclick} referrerpolicy="no-referrer"
+    ><slot>{label}</slot></a
+  >
 {/if}
