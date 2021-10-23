@@ -14,7 +14,7 @@
   $: isCurrent = href.startsWith("?") && search === href;
 
   function onclick(e: MouseEvent) {
-    if (href.startsWith("?") && window.history?.pushState) {
+    if (!e.ctrlKey && href.startsWith("?") && window.history?.pushState) {
       e.preventDefault();
       window.history.pushState(null, href, href);
       window.dispatchEvent(new PopStateEvent("onpushstate", { state: null }));
