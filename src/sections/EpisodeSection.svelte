@@ -9,6 +9,19 @@
   export let currentEpisode: EpisodeData;
 
   $: notesLines = currentEpisode.notes.trim().split("\n");
+
+  $: {
+    if (currentEpisode && "mediaSession" in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: currentEpisode.name,
+        artist: currentEpisode.artist,
+        album: "musicforprogramming.net",
+        artwork: [
+          { src: "/img/folder.jpg", sizes: "600x600", type: "image/jpeg" },
+        ],
+      });
+    }
+  }
 </script>
 
 <MainSection title={currentEpisode.name}>
