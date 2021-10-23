@@ -20,6 +20,10 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 - Added `LICENSE` to IPFS directory & license notice to `build/bundle.js`. (#11)
 
+- Added session metadata so native music players will show the artist and album
+  names as well as the album cover instead of just
+  `musicForProgramming("01: Datassette")`. (#16)
+
 ## v1.1.0 (2021-10-04)
 
 - Changed from `.mp3` files to `.ogg` files, reducing the size down to almost
