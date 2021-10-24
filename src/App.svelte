@@ -68,8 +68,6 @@
         e.preventDefault();
         navigateToNextEpisode();
         break;
-      default:
-        return;
     }
   }
 
