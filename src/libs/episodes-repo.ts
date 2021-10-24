@@ -18,6 +18,22 @@ export function getLatestEpisode(): EpisodeData {
   return episodeDatas[episodeDatas.length - 1];
 }
 
+export function getPreviousEpisode(episodeId: string): EpisodeData {
+  const index = episodeDatas.indexOf(getEpisodeById(episodeId));
+  if (index === -1) {
+    return getLatestEpisode();
+  }
+  return episodeDatas[(index + episodeDatas.length - 1) % episodeDatas.length];
+}
+
+export function getNextEpisode(episodeId: string): EpisodeData {
+  const index = episodeDatas.indexOf(getEpisodeById(episodeId));
+  if (index === -1) {
+    return getLatestEpisode();
+  }
+  return episodeDatas[(index + 1) % episodeDatas.length];
+}
+
 export function getEpisodeById(episodeId: string): EpisodeData {
   return episodeMap.get(episodeId);
 }

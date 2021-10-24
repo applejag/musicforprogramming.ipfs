@@ -1,12 +1,18 @@
 <script lang="ts">
   import EpisodeListSection from "./sections/EpisodeListSection.svelte";
   import IntroSection from "./sections/IntroSection.svelte";
-  import { getEpisodeById, getEpisodeByNumber, getLatestEpisode } from "./libs/episodes-repo";
+  import {
+    getEpisodeById,
+    getEpisodeByNumber,
+    getLatestEpisode,
+    getNextEpisode,
+    getPreviousEpisode,
+  } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
   import AboutSection from "./sections/AboutSection.svelte";
   import CreditsSection from "./sections/CreditsSection.svelte";
-  import { addWindowEventListener } from "./libs/util";
+  import { addWindowEventListener, navigate } from "./libs/util";
 
   enum CurrentPage {
     About,
@@ -34,9 +40,11 @@
   function getEpisodeFromSearchKeys(keys: string[]) {
     const episodeId = keys.find(getEpisodeById);
     const episodeNumber = searchParams.get("episode");
-    return getEpisodeByNumber(episodeNumber) ??
-          getEpisodeById(episodeId) ??
-          getLatestEpisode();
+    return (
+      getEpisodeByNumber(episodeNumber) ??
+      getEpisodeById(episodeId) ??
+      getLatestEpisode()
+    );
   }
 
   function onstatechanged() {
@@ -45,9 +53,49 @@
   }
 
   addWindowEventListener("onpushstate", onstatechanged);
+
+  function onkeydown(e: KeyboardEvent) {
+    if (currentPage !== CurrentPage.Episode) {
+      return;
+    }
+    switch (e.code || e.key) {
+      case "ArrowLeft":
+      case "MediaTrackPrevious":
+        e.preventDefault();
+        navigateToPreviousEpisode();
+        break;
+      case "ArrowRight":
+      case "MediaTrackNext":
+        e.preventDefault();
+        navigateToNextEpisode();
+        break;
+      default:
+        return;
+    }
+  }
+
+  function navigateToNextEpisode() {
+    const ep = getNextEpisode(currentEpisode && currentEpisode.id);
+    if (ep) {
+      navigate("?episode=" + ep.number);
+    }
+  }
+
+  function navigateToPreviousEpisode() {
+    const ep = getPreviousEpisode(currentEpisode && currentEpisode.id);
+    if (ep) {
+      navigate("?episode=" + ep.number);
+    }
+  }
+
+  if (window.navigator && navigator.mediaSession) {
+    const sess = navigator.mediaSession;
+    sess.setActionHandler("nexttrack", navigateToNextEpisode);
+    sess.setActionHandler("previoustrack", navigateToPreviousEpisode);
+  }
 </script>
 
-<svelte:window on:popstate={onstatechanged} />
+<svelte:window on:popstate={onstatechanged} on:keydown={onkeydown} />
 
 <div class="container f-left">
   <IntroSection />

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { linkHref, linkLabel, LinkOrHref } from "./libs/link";
 
-  import { addWindowEventListener } from "./libs/util";
+  import { addWindowEventListener, navigate } from "./libs/util";
 
   export let href: LinkOrHref = null;
   export let target: string = null;
@@ -20,8 +20,7 @@
   function onclick(e: MouseEvent) {
     if (!e.ctrlKey && actualHref.startsWith("?") && window.history?.pushState) {
       e.preventDefault();
-      window.history.pushState(null, actualHref, actualHref);
-      window.dispatchEvent(new PopStateEvent("onpushstate", { state: null }));
+      navigate(actualHref);
     }
   }
 
