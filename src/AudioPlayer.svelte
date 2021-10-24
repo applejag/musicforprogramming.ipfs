@@ -5,6 +5,8 @@
     newAudioContext,
     secondsToHHMMSS,
   } from "./libs/util";
+  import AudioPlaybackBar from "./AudioPlaybackBar.svelte";
+  import type TimeRange from "./libs/time-range";
 
   export let src: string;
   export let displaySrc: string = src;
@@ -19,6 +21,9 @@
     Paused,
   }
   let state = PlayState.Loading;
+  let buffered: TimeRange[] = [];
+  let currentTime = 0;
+  let duration = 0;
 
   $: fileSizePromise = fetchFileSize(src);
 
@@ -36,14 +41,15 @@
     if (state === PlayState.Loading) {
       timeString = "--:--:--";
     } else if (state === PlayState.Stopped) {
-      timeString = secondsToHHMMSS(audio.duration);
+      timeString = secondsToHHMMSS(duration);
     } else {
-      timeString = secondsToHHMMSS(audio.currentTime);
+      timeString = secondsToHHMMSS(currentTime);
     }
   }
 
   function onloadedmetadata() {
     state = PlayState.Stopped;
+    duration = audio.duration;
     updateTimeString();
   }
 
@@ -130,6 +136,20 @@
   function onended() {
     stop();
   }
+
+  function ontimeupdate() {
+    currentTime = audio.currentTime;
+    updateTimeString();
+  }
+
+  function onprogress() {
+    let arr: TimeRange[] = [];
+    let timeRanges = audio.buffered;
+    for (let i = 0; i < timeRanges.length; i++) {
+      arr.push({ start: timeRanges.start(i), end: timeRanges.end(i) });
+    }
+    buffered = arr;
+  }
 </script>
 
 <svelte:window on:keydown={onkeydown} />
@@ -156,6 +176,15 @@
   {/if}
 </div>
 
+<div class="playback">
+  <AudioPlaybackBar
+    {buffered}
+    {duration}
+    {currentTime}
+    isPlaying={state == PlayState.Playing}
+  />
+</div>
+
 <div class="file">
   <Link href={src}>{displaySrc}</Link>
   {#await fileSizePromise}
@@ -165,11 +194,12 @@
     <audio
       {src}
       bind:this={audio}
-      on:timeupdate={updateTimeString}
+      on:timeupdate={ontimeupdate}
       on:loadedmetadata={onloadedmetadata}
       on:ended={onended}
       on:play={onplay}
       on:pause={onpause}
+      on:progress={onprogress}
     />
   {/await}
 </div>
@@ -188,7 +218,11 @@
   }
 
   .controls {
-    margin: 1rem 0;
+    margin-top: 1rem;
     color: $palette_grey;
+  }
+
+  .playback {
+    margin-bottom: 1rem;
   }
 </style>
