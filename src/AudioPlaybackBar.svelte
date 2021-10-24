@@ -56,6 +56,7 @@
   .audio-playback {
     color: $palette_grey;
     margin: 0;
+    font-family: $font_family_mono;
 
     .current {
       color: $palette_dirty_white;

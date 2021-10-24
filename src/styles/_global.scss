@@ -32,10 +32,14 @@ body,
 button,
 input,
 select,
-textarea,
-code {
-  font-family: "Conso", Courier New, monospace;
+textarea {
+  font-family: $font_family;
   color: $palette_dirty_white;
+}
+
+code,
+pre {
+  font-family: $font_family_mono;
 }
 
 * {
