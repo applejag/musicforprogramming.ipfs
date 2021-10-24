@@ -48,7 +48,6 @@
   }
 
   function onstatechanged() {
-    console.log("state changed", window.location.search);
     searchParams = new URLSearchParams(window.location.search);
   }
 
