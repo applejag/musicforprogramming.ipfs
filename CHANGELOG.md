@@ -40,6 +40,9 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 - Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
   link in a new tab. (#20)
 
+- Fixed so arrow keys change the episode, as advertised in the "about" section.
+  (#24)
+
 ## v1.1.0 (2021-10-04)
 
 - Changed from `.mp3` files to `.ogg` files, reducing the size down to almost
