@@ -20,6 +20,10 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
   names as well as the album cover instead of just
   `musicForProgramming("01: Datassette")`. (#16)
 
+- Added progress and buffer indicator. When buffering, an animated cursor will
+  be shown. The progress bar uses `-` for unbuffered and `=` for buffered
+  sections. (#22)
+
 - Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
   Old URLs are still supported, although not used in episode link list.
   (#10, thanks @DvdQzd!)
