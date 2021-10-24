@@ -24,8 +24,22 @@
   let buffered: TimeRange[] = [];
   let currentTime = 0;
   let duration = 0;
+  let isBuffering = false;
 
   $: fileSizePromise = fetchFileSize(src);
+  $: {
+    if (src) {
+      reset();
+    }
+  }
+
+  function reset() {
+    currentTime = 0;
+    duration = 0;
+    buffered = [];
+    state = PlayState.Loading;
+    isBuffering = false;
+  }
 
   async function fetchFileSize(src: string): Promise<string | null> {
     state = PlayState.Loading;
@@ -150,6 +164,22 @@
     }
     buffered = arr;
   }
+
+  function onwaiting() {
+    isBuffering = true;
+  }
+
+  function onplaying() {
+    isBuffering = false;
+  }
+
+  function onseeking() {
+    isBuffering = true;
+  }
+
+  function onseeked() {
+    isBuffering = false;
+  }
 </script>
 
 <svelte:window on:keydown={onkeydown} />
@@ -182,6 +212,7 @@
     {duration}
     {currentTime}
     isPlaying={state == PlayState.Playing}
+    {isBuffering}
   />
 </div>
 
@@ -200,6 +231,10 @@
       on:play={onplay}
       on:pause={onpause}
       on:progress={onprogress}
+      on:waiting={onwaiting}
+      on:playing={onplaying}
+      on:seeking={onseeking}
+      on:seeked={onseeked}
     />
   {/await}
 </div>

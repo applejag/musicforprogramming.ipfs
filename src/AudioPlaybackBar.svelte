@@ -1,4 +1,5 @@
 <script lang="ts">
+  import BufferIndicator from "./BufferIndicator.svelte";
   import type TimeRange from "./libs/time-range";
 
   export let buffered: TimeRange[] = [];
@@ -6,6 +7,7 @@
   export let duration = 0;
   export let currentTime = 0;
   export let isPlaying = false;
+  export let isBuffering = false;
 
   enum SectionState {
     Empty,
@@ -42,7 +44,8 @@
 <pre
   class="audio-playback">
 [{#each sections as s, i}
-  {#if i == currentIndex}<span class="current">{#if isPlaying}&gt;{:else}|{/if}</span
+  {#if i == currentIndex}<span class="current"
+  >{#if isBuffering}<BufferIndicator />{:else if isPlaying}&gt;{:else}|{/if}</span
     >{:else if s == SectionState.Buffered}<span class="buffered">=</span
     >{:else}<span class="empty">-</span>{/if}{/each}]
 </pre>
