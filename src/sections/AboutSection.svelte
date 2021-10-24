@@ -40,6 +40,14 @@
 
     <li><kbd>[RIGHT]</kbd> next episode</li>
   </ul>
+
+  <p>Progress indicator:</p>
+  <ul>
+    <li><code>[&gt;]</code> current time, playing</li>
+    <li><code>[|]</code> current time, paused</li>
+    <li><code>[-----]</code> unbuffered audio</li>
+    <li><code>[=====]</code> buffered audio</li>
+  </ul>
 </MainSection>
 
 <style lang="scss">
@@ -54,5 +62,9 @@
   kbd {
     font: inherit;
     color: $palette_purple;
+  }
+
+  code {
+    color: $palette_grey;
   }
 </style>
