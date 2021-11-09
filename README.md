@@ -33,7 +33,7 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
 
 ### HTTP gateways
 
-- IPFS.io:
+- ipfs.io:
   [via DNSLink](https://ipfs.io/ipns/mfp.jillejr.tech/),
   [via CIDv0](https://ipfs.io/ipfs/QmPk8pcQVSaG1yqRHYsYDXozZ6i8MN21AaoZozbnnNkTQh/),
   [via CIDv1](https://ipfs.io/ipfs/bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny/)
@@ -42,7 +42,7 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
   [via DNSLink](https://mfp-jillejr-tech.ipns.dweb.link/),
   [via CIDv1](https://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny.ipfs.dweb.link/)
 
-- Cloudflare:
+- cloudflare-ipfs.com:
   [via DNSLink](https://cloudflare-ipfs.com/ipns/mfp.jillejr.tech/),
   [via CIDv0](https://cloudflare-ipfs.com/ipfs/QmPk8pcQVSaG1yqRHYsYDXozZ6i8MN21AaoZozbnnNkTQh),
   [via CIDv1](https://cloudflare-ipfs.com/ipfs/bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny)
