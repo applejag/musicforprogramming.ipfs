@@ -12,7 +12,7 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 	https://changelog.md/
 -->
 
-## v1.2.0 (WIP)
+## v1.2.0 (2021-11-09)
 
 - Added `LICENSE` to IPFS directory & license notice to `build/bundle.js`. (#11)
 
@@ -26,7 +26,9 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 - Added button to select a random episode. (#12, thanks @DvdQzd!)
 
-26
+- Added keyboard shortcuts and updated about page to correctly describe actual
+  keybindings. Check the `[About]` (`?about`) page for more info. (#24)
+
 - Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
   Old URLs are still supported, although not used in episode link list.
   (#10, thanks @DvdQzd!)
@@ -42,9 +44,6 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 - Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
   link in a new tab. (#20)
-
-- Added keyboard shortcuts and updated about page to correctly describe actual
-  keybindings. Check the `[About]` (`?about`) page for more info. (#24)
 
 ## v1.1.0 (2021-10-04)
 
