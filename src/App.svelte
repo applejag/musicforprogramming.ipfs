@@ -7,7 +7,6 @@
     getLatestEpisode,
     getNextEpisode,
     getPreviousEpisode,
-    getRandomEpisode,
   } from "./libs/episodes-repo";
   import EpisodeSection from "./sections/EpisodeSection.svelte";
   import MetaSection from "./sections/MetaSection.svelte";
@@ -39,7 +38,6 @@
   }
 
   function getEpisodeFromSearchKeys(keys: string[]) {
-    if (searchParams.has("randomEpisode")) return getRandomEpisode();
     const episodeId = keys.find(getEpisodeById);
     const episodeNumber = searchParams.get("episode");
     return (
