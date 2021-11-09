@@ -24,6 +24,8 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
   be shown. The progress bar uses `-` for unbuffered and `=` for buffered
   sections. (#22)
 
+- Added button to select a random episode. (#12, thanks @DvdQzd!)
+
 - Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
   Old URLs are still supported, although not used in episode link list.
   (#10, thanks @DvdQzd!)
