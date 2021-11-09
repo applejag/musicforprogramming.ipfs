@@ -33,6 +33,9 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
 
 ### HTTP gateways
 
+- ipfs.infura.io:
+  [via CIDv1](https://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny.ipfs.infura-ipfs.io/)
+
 - ipfs.io:
   [via DNSLink](https://ipfs.io/ipns/mfp.jillejr.tech/),
   [via CIDv0](https://ipfs.io/ipfs/QmPk8pcQVSaG1yqRHYsYDXozZ6i8MN21AaoZozbnnNkTQh/),
@@ -46,6 +49,15 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
   [via DNSLink](https://cloudflare-ipfs.com/ipns/mfp.jillejr.tech/),
   [via CIDv0](https://cloudflare-ipfs.com/ipfs/QmPk8pcQVSaG1yqRHYsYDXozZ6i8MN21AaoZozbnnNkTQh),
   [via CIDv1](https://cloudflare-ipfs.com/ipfs/bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny)
+
+### Geo-replications
+
+The dApp is pinned to multiple services to allow improved throughput and
+discoverability:
+
+- my own VPS, hosted in Frankfurt, Germany.
+- <https://pinata.cloud/>, replicated in Frankfurt, Germany and New York, USA.
+- <https://infura.io/>, *uncertain geographical location, but DNS records on their gateway suggests eastern US*
 
 ## Limitations
 
