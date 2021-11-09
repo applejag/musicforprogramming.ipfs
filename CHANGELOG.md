@@ -12,7 +12,7 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 	https://changelog.md/
 -->
 
-## v1.2.0 (WIP)
+## v1.2.0 (2021-11-09)
 
 - Added `LICENSE` to IPFS directory & license notice to `build/bundle.js`. (#11)
 
