@@ -1,4 +1,5 @@
 import type { LinkOrHref } from "./link";
+import { randomElement } from "./util";
 
 export interface EpisodeRawData {
   readonly id: string;
@@ -40,6 +41,10 @@ export function getEpisodeById(episodeId: string): EpisodeData {
 
 export function getEpisodeByNumber(episodeNumber: string): EpisodeData {
   return episodeMapByNumber.get(episodeNumber);
+}
+
+export function getRandomEpisode(): EpisodeData {
+  return randomElement(episodeDatas);
 }
 
 export function getAllEpisodeData(): EpisodeData[] {

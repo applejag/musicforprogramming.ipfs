@@ -1,9 +1,15 @@
 <script lang="ts">
   import Section from "./base/Section.svelte";
-  import { getAllEpisodeData } from "../libs/episodes-repo";
+  import { getAllEpisodeData, getRandomEpisode } from "../libs/episodes-repo";
   import Link from "../Link.svelte";
+  import { navigate } from "../libs/util";
 
   export let currentEpisodeId: string = null;
+
+  function onClickRandomEpisode() {
+    const epi = getRandomEpisode();
+    navigate(`?episode=${epi.number}`);
+  }
 </script>
 
 <Section title="Episodes">
@@ -17,6 +23,11 @@
         {/if}
       </li>
     {/each}
+    <li>
+      <button class="link" on:click={onClickRandomEpisode}
+        >??: Random episode</button
+      >
+    </li>
   </ol>
 </Section>
 
