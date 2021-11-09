@@ -26,6 +26,7 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 
 - Added button to select a random episode. (#12, thanks @DvdQzd!)
 
+26
 - Changed episode routing from `?one` & `?two` to `?episode=1` & `?episode=2`.
   Old URLs are still supported, although not used in episode link list.
   (#10, thanks @DvdQzd!)
@@ -42,8 +43,8 @@ This project tries to follow [SemVer 2.0.0](https://semver.org/).
 - Fixed issue where `Ctrl` + left mouse button clicking a link did not open the
   link in a new tab. (#20)
 
-- Fixed so arrow keys change the episode, as advertised in the "about" section.
-  (#24)
+- Added keyboard shortcuts and updated about page to correctly describe actual
+  keybindings. Check the `[About]` (`?about`) page for more info. (#24)
 
 ## v1.1.0 (2021-10-04)
 
