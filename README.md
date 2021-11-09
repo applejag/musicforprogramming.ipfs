@@ -33,7 +33,7 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
 
 ### HTTP gateways
 
-- ipfs.infura.io:
+- infura-ipfs.io:
   [via CIDv1](https://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny.ipfs.infura-ipfs.io/)
 
 - ipfs.io:
