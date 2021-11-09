@@ -1,4 +1,5 @@
 import { onDestroy } from "svelte";
+import { linkHref, linkLabel, LinkOrHref } from "./link";
 
 function padNum2(n: number): string {
   return n.toString().padStart(2, "0");
@@ -66,4 +67,9 @@ export function addWindowEventListener(
 ) {
   window.addEventListener(type, listener);
   onDestroy(() => window.removeEventListener(type, listener));
+}
+
+export function navigate(href: LinkOrHref) {
+  window.history.pushState(null, linkLabel(href), linkHref(href));
+  window.dispatchEvent(new PopStateEvent("onpushstate", { state: null }));
 }

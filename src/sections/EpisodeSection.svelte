@@ -9,6 +9,19 @@
   export let currentEpisode: EpisodeData;
 
   $: notesLines = currentEpisode.notes.trim().split("\n");
+
+  $: {
+    if (currentEpisode && "mediaSession" in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: currentEpisode.name,
+        artist: currentEpisode.artist,
+        album: "musicforprogramming.net",
+        artwork: [
+          { src: "/img/folder.jpg", sizes: "600x600", type: "image/jpeg" },
+        ],
+      });
+    }
+  }
 </script>
 
 <MainSection title={currentEpisode.name}>
@@ -23,12 +36,12 @@
   </p>
   <p>
     {#if currentEpisode.compilerLinks.length === 1}
-      Compiler link: <Link link={currentEpisode.compilerLinks[0]} />
+      Compiler link: <Link href={currentEpisode.compilerLinks[0]} />
     {:else}
       Compiler links:
       <ul>
-        {#each currentEpisode.compilerLinks as link}
-          <li><Link {link} /></li>
+        {#each currentEpisode.compilerLinks as href}
+          <li><Link {href} /></li>
         {/each}
       </ul>
     {/if}

@@ -88,7 +88,7 @@
     "X",
   ];
 
-  let text: string;
+  let text = randomText();
 
   function randomText() {
     const thing = randomElement(things);
@@ -108,8 +108,6 @@
   }
 
   onDestroy(() => clearTimeout(timeout));
-
-  randomizeText();
 </script>
 
 {text}

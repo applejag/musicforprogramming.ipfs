@@ -1,23 +1,26 @@
 <script lang="ts">
   import { linkHref, linkLabel, LinkOrHref } from "./libs/link";
 
-  import { addWindowEventListener } from "./libs/util";
+  import { addWindowEventListener, navigate } from "./libs/util";
 
-  export let link: LinkOrHref = null;
-  export let href: string = linkHref(link);
-  export let target: string = href.startsWith("?") ? undefined : "about:blank";
+  export let href: LinkOrHref = null;
+  export let target: string = null;
   export let download: boolean | undefined = undefined;
 
-  $: label = linkLabel(link) ?? href;
+  $: actualHref = linkHref(href);
+  $: actualLabel = linkLabel(href) ?? actualHref;
+  $: actualTarget =
+    target ??
+    (!actualHref || actualHref.startsWith("?") ? undefined : "_blank");
 
   let search = window.location.search;
-  $: isCurrent = href.startsWith("?") && search === href;
+  $: isCurrent =
+    actualHref && actualHref.startsWith("?") && search === actualHref;
 
   function onclick(e: MouseEvent) {
-    if (href.startsWith("?") && window.history?.pushState) {
+    if (!e.ctrlKey && actualHref.startsWith("?") && window.history?.pushState) {
       e.preventDefault();
-      window.history.pushState(null, href, href);
-      window.dispatchEvent(new PopStateEvent("onpushstate", { state: null }));
+      navigate(actualHref);
     }
   }
 
@@ -31,7 +34,13 @@
 <svelte:window on:popstate={onstatechanged} />
 
 {#if isCurrent}
-  <span class="selected"><slot>{label}</slot></span>
+  <span class="selected"><slot>{actualLabel}</slot></span>
 {:else}
-  <a {href} {target} {download} on:click={onclick}><slot>{label}</slot></a>
+  <a
+    href={actualHref}
+    target={actualTarget}
+    {download}
+    referrerpolicy="no-referrer"
+    on:click={onclick}><slot>{actualLabel}</slot></a
+  >
 {/if}
