@@ -38,6 +38,9 @@ ipfs://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny    CIDv1
 - IPFS.io via CIDv1: <https://ipfs.io/ipfs/bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny/>
 - dweb.link via DNSLink: <https://mfp-jillejr-tech.ipns.dweb.link/>
 - dweb.link via CIDv1: <https://bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny.ipfs.dweb.link/>
+- Cloudflare via DNSLink: <https://cloudflare-ipfs.com/ipns/mfp.jillejr.tech/>
+- Cloudflare via CIDv0: <https://cloudflare-ipfs.com/ipfs/QmPk8pcQVSaG1yqRHYsYDXozZ6i8MN21AaoZozbnnNkTQh>
+- Cloudflare via CIDv1: <https://cloudflare-ipfs.com/ipfs/bafybeiau37kqbpu7m23ifcbbvfv6wmtjstfib3esfczshy4misp5caacny>
 
 ## Limitations
 
