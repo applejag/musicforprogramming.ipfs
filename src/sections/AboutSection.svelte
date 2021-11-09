@@ -34,11 +34,16 @@
 
   <p>Keyboard controls:</p>
   <ul>
-    <li><kbd>[SPACE]</kbd> play / pause</li>
-
-    <li><kbd>[LEFT]</kbd> previous episode</li>
-
-    <li><kbd>[RIGHT]</kbd> next episode</li>
+    <li>
+      <kbd>[SPACE]</kbd>, <kbd>[⏯️ PAUSE/PLAY]</kbd>, <kbd>[▶️ PLAY]</kbd> or
+      <kbd>[⏸️ PAUSE]</kbd> play / pause
+    </li>
+    <li><kbd>[⏮️ LAST TRACK]</kbd> previous episode</li>
+    <li><kbd>[⏭️ NEXT TRACK]</kbd> next episode</li>
+    <li><kbd>[⬅️️ LEFT]</kbd> seek backward</li>
+    <li><kbd>[➡️ RIGHT]</kbd> seek forward</li>
+    <li><kbd>[HOME]</kbd> seek to start</li>
+    <li><kbd>[CTRL]</kbd> or <kbd>[ALT]</kbd> seek by 300s increments</li>
   </ul>
 
   <p>Progress indicator:</p>
@@ -66,5 +71,6 @@
 
   code {
     color: $palette_grey;
+    font-family: monospace;
   }
 </style>
