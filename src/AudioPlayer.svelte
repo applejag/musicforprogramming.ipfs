@@ -14,6 +14,15 @@
   let audio: HTMLAudioElement;
   let timeString = "--:--:--";
 
+  let seekKeysCodes = {
+    ControlLeft: false,
+    ControlRight: false,
+    AltLeft: false,
+    AltRight: false,
+  };
+
+  let seekDistanceSeconds = 30;
+
   enum PlayState {
     Loading,
     Stopped,
@@ -61,6 +70,21 @@
     }
   }
 
+  function updateSeekDuration() {
+    let anyDown = false;
+    for (const key in seekKeysCodes) {
+      if (seekKeysCodes[key]) {
+        anyDown = true;
+        break;
+      }
+    }
+    if (anyDown) {
+      seekDistanceSeconds = 60 * 5;
+    } else {
+      seekDistanceSeconds = 30;
+    }
+  }
+
   function onloadedmetadata() {
     state = PlayState.Stopped;
     duration = audio.duration;
@@ -98,37 +122,58 @@
     audio.currentTime = 0;
   }
 
-  function seek(deltaSeconds: number) {
+  function seekTo(secondsFromStart: number) {
     if (state !== PlayState.Playing && state !== PlayState.Paused) {
       return;
     }
     beep();
-    const newTime = audio.currentTime + deltaSeconds;
-    audio.currentTime = Math.min(Math.max(newTime, 0), audio.duration - 1);
+    audio.currentTime = Math.min(
+      Math.max(secondsFromStart, 0),
+      audio.duration - 1
+    );
+  }
+
+  function seek(deltaSeconds: number) {
+    seekTo(audio.currentTime + deltaSeconds);
   }
 
   function seekForward() {
-    seek(30);
+    seek(seekDistanceSeconds);
   }
 
   function seekBackward() {
-    seek(-30);
+    seek(-seekDistanceSeconds);
+  }
+
+  function onkeyup(e: KeyboardEvent) {
+    if (seekKeysCodes[e.code] !== undefined) {
+      seekKeysCodes[e.code] = false;
+      updateSeekDuration();
+    }
   }
 
   function onkeydown(e: KeyboardEvent) {
+    if (seekKeysCodes[e.code] !== undefined) {
+      seekKeysCodes[e.code] = true;
+      updateSeekDuration();
+    }
     if (state === PlayState.Loading) {
       return;
     }
-    switch (e.code) {
+    switch (e.code || e.key) {
       case "MediaPlayPause":
       case "MediaPlay":
       case "MediaPause":
+      case "Pause":
       case "Space":
         if (state === PlayState.Playing) {
           pause();
         } else if (state === PlayState.Paused || state === PlayState.Stopped) {
           play();
         }
+        break;
+      case "Home":
+        seekTo(0);
         break;
       case "ArrowLeft":
         seekBackward();
@@ -185,7 +230,7 @@
   }
 </script>
 
-<svelte:window on:keydown={onkeydown} />
+<svelte:window on:keydown={onkeydown} on:keyup={onkeyup} />
 
 <div class="controls">
   <pre>{timeString}</pre>
@@ -200,12 +245,13 @@
   {/if}
   {#if state === PlayState.Playing || state === PlayState.Paused}
     <button on:click={stop}><pre>[STOP]</pre></button>
-    <button on:click={seekBackward}><pre>[-30s]</pre></button>
-    <button on:click={seekForward}><pre>[+30s]</pre></button>
+    <button on:click={seekBackward}><pre>[-{seekDistanceSeconds}s]</pre></button
+    >
+    <button on:click={seekForward}><pre>[+{seekDistanceSeconds}s]</pre></button>
   {:else}
     <pre>[STOP]</pre>
-    <pre>[-30s]</pre>
-    <pre>[+30s]</pre>
+    <pre>[-{seekDistanceSeconds}s]</pre>
+    <pre>[+{seekDistanceSeconds}s]</pre>
   {/if}
 </div>
 
