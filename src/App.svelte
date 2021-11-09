@@ -58,12 +58,10 @@
       return;
     }
     switch (e.code || e.key) {
-      case "ArrowLeft":
       case "MediaTrackPrevious":
         e.preventDefault();
         navigateToPreviousEpisode();
         break;
-      case "ArrowRight":
       case "MediaTrackNext":
         e.preventDefault();
         navigateToNextEpisode();

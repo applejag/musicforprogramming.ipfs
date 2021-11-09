@@ -120,6 +120,9 @@
       return;
     }
     switch (e.code) {
+      case "MediaPlayPause":
+      case "MediaPlay":
+      case "MediaPause":
       case "Space":
         if (state === PlayState.Playing) {
           pause();
