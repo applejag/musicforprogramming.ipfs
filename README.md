@@ -57,7 +57,7 @@ discoverability:
 
 - my own VPS, hosted in Frankfurt, Germany.
 - <https://pinata.cloud/>, replicated in Frankfurt, Germany and New York, USA.
-- <https://infura.io/>, *uncertain geographical location, but DNS records on their gateway suggests eastern US*
+- <https://infura.io/>, _uncertain geographical location, but DNS records on their gateway suggests eastern US_
 
 ## Limitations
 
@@ -249,12 +249,13 @@ Desktop, that would be to click the system tray icon of IPFS and then selecting
 
 ### Difference with [musicforprogramming.net][mfp]
 
-|                    | This repo                | [musicforprogramming.net][mfp] |
-| ------------------ | ------------------------ | ------------------------------ |
-| Hosting            | [IPFS][ipfs] (over HTTP) | HTTP                           |
-| Backend            | None (static site)       | PHP (I'm guessing?)            |
-| Frontend framework | [Svelte][svelte]         | [jQuery][jquery]               |
-| Originality        | _Barely any_             | _Tons_                         |
+|                    | This repo           | [musicforprogramming.net][mfp] |
+| ------------------ | ------------------  | ------------------------------ |
+| Created by         | [@jilleJr][jilleJr] | [Datassette][datassette]       |
+| Hosting            | [IPFS][ipfs]        | HTTP                           |
+| Backend            | None (static site)  | PHP _(I'm guessing?)_          |
+| Frontend framework | [Svelte][svelte]    | [jQuery][jquery]               |
+| Originality        | _Barely any_        | _Tons_                         |
 
 ## Development
 
@@ -348,3 +349,4 @@ that I've had so many hours of great use from. ❤
 [datassette]: http://datassette.net/
 [mfp]: https://musicforprogramming.net/
 [jquery]: https://jquery.com/
+[jillejr]: https://github.com/jilleJr
