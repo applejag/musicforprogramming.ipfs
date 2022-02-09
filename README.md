@@ -90,76 +90,11 @@ discoverability:
 
 ### Seeding peers
 
-Adding known seeding peers will speed up the dApp as that gives your local IPFS
-node a known place to download the files from.
-
-Peers
-
-```json
-[
-  {
-    "Addrs": [
-      "/ip4/139.162.175.151/tcp/4001",
-      "/ip6/2a01:7e01::f03c:92ff:fe09:773b/tcp/4001",
-      "/ip4/139.162.175.151/udp/4001/quic",
-      "/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic"
-    ],
-    "ID": "12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC"
-  }
-]
-```
-
-Edit your IPFS config by adding the above peer:
-
-```diff
- {
-   // ...
-
-  "Ipns": {
-    "RecordLifetime": "",
-    "RepublishPeriod": "",
-    "ResolveCacheSize": 128
-  },
-  "Migration": {
-    "DownloadSources": [],
-    "Keep": ""
-  },
-  "Mounts": {
-    "FuseAllowOther": false,
-    "IPFS": "/ipfs",
-    "IPNS": "/ipns"
-  },
-  "Peering": {
--   "Peers": null
-+   "Peers": [
-+     {
-+       "Addrs": [
-+         "/ip4/139.162.175.151/udp/4001/quic",
-+         "/ip6/2a01:7e01::f03c:92ff:fe09:773b/udp/4001/quic"
-+       ],
-+       "ID": "12D3KooWLzTuiZtMJDFzJuGQ2mob5ySC3wY2EndGhitrCV5RQ7BC"
-+     }
-+   ]
-  },
-  "Pinning": {
-    "RemoteServices": {}
-  },
-  "Plugins": {
-    "Plugins": null
-  },
-  "Provider": {
-    "Strategy": ""
-  },
-  // ...
-}
-```
-
-This will make sure your local IPFS node does not disconnect from the peer when
-it's inactive, as finding the peer again takes a lot of time.
-(Docs: [`Peering.Peers`](https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#peeringpeers))
-
-If adding multiple peers, make sure to add a comma `,` on all but the last
-closing object brace `}`.
+> :warning: I have disabled this due to limited resources. IPFS currently takes
+> up way more memory than I'm comfortable with, and is hogging up my VPS.
+>
+> It's probably configurable and all that, but I ain't got the energy to delve
+> deeper into the subject right now.
 
 ### Disabling TCP connections on your local node
 
