@@ -24,7 +24,7 @@
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^2.0.0",
     "node-sass": "^9.0.0",
-    "postcss": "^8.3.8",
+    "postcss": "^8.4.31",
     "postcss-load-config": "^4.0.1",
     "rollup": "^2.3.4",
     "rollup-plugin-banner2": "^1.2.2",
